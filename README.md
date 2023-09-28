@@ -1,4 +1,3 @@
-# Ample
 <div id="top"></div>
 
 

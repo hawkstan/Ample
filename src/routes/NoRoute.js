@@ -1,3 +1,5 @@
+import React from 'react';
+
 function NoRoute(){
     return (
         <main>

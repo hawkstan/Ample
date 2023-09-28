@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 //import mode from '../css/toggle'; //for a potential dark mode
 

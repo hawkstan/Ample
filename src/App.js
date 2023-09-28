@@ -7,13 +7,14 @@ import NoRoute from './routes/NoRoute';
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
           <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="home" element={<Home />} />
               <Route path="*" element={<NoRoute />} />
           </Route>
-      </Routes>
+      </Routes> */}
+      <h1>UwU</h1>
     </div>
   );
 }

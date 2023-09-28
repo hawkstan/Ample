@@ -46,9 +46,7 @@ This is a website made for the Ample project, which is an university work made b
 
 ### Built With
 
-* React
-* [React Router](https://github.com/remix-run/react-router)
-* HTML / CSS
+* 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

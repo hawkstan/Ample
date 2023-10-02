@@ -13,12 +13,12 @@ export default function Home(){
             <section className="">
                 <h3>Nos intervenant.es</h3>
                 <ul>
-                    <li>image</li>
-                    <li>image</li>
-                    <li>image</li>
-                    <li>image</li>
-                    <li>image</li>
-                    <li>image</li>
+                    <li>image<p>Rabi</p></li>
+                    <li>image<p>Melissa</p></li>
+                    <li>image<p>Loïc</p></li>
+                    <li>image<p>Cassandra</p></li>
+                    <li>image<p>Adeline</p></li>
+                    <li>image<p>Emma</p></li>
                 </ul>
             </section>
         </main>

@@ -13,7 +13,7 @@
     A website made for the Ample project
     <br />
     <br />
-    <a href="">View site</a>
+    <a href="https://hawkstan.github.io/ample">View site</a>
   </p>
 </div>
 

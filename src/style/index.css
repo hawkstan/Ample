@@ -10,29 +10,51 @@ html {
 }
 
 body {
-  text-align: center;
   font-family: "Montserrat";
   background: #d0c4e8;
   color: #f2f2f2;
 }
-
-a {
+body a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
 }
-
-h1, h2, h3, h4, h5, h6 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Fredoka";
+}
+body ul {
+  list-style-type: none;
 }
 
 header nav ul li {
   color: #151730;
 }
+@media screen and (max-width: 500px) {
+  header img {
+    height: 15rem;
+    margin: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) {
+  header {
+    display: flex;
+    align-content: space-between;
+  }
+  header img {
+    height: 10rem;
+  }
+  header ul {
+    display: flex;
+  }
+}
 
 footer {
   background-color: #151730;
   display: grid;
+}
+footer img {
+  height: 10rem;
 }
 footer address {
   display: grid;

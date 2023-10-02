@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-//import mode from '../css/toggle'; //for a potential dark mode
+import logoAmple from "../img/logoAmple.png";
 
 export default function Header() {
     return(
         <header>
-            <h1>Ample</h1>
+            <img src={logoAmple} alt="une personne grosse d'apparence féminine assise sur le mot Ample" />
             <nav>
                 <ul>
                     <li><Link to="/home">Accueil</Link></li>
@@ -14,13 +14,6 @@ export default function Header() {
                     <li><Link to="/project">Ce projet</Link></li>
                 </ul>
             </nav>
-            {/* <button 
-                className="button" 
-                aria-label="Toggle Light Mode" 
-                onClick={mode()}>
-                <span></span>
-                <span></span>
-            </button> */}
         </header>        
     )
 };

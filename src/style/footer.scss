@@ -1,6 +1,9 @@
 @use "variables.scss";
 
 footer{
+    img{
+        height: 10rem;
+    }
     background-color: variables.$darkblue;
     display: grid;
     address{

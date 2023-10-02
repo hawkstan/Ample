@@ -1,7 +1,9 @@
+import logoAmple from "../img/logoAmple.png";
+
 export default function Footer() {
     return(
         <footer>
-            <h5>Ample</h5>
+            <img src={logoAmple} alt="une personne grosse d'apparence féminine assise sur le mot Ample" />
             <address>
                 <ul>
                     <li>insta</li>

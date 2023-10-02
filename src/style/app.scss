@@ -1,5 +1,8 @@
 @use "variables.scss";
 
+//ici sont les propriétés pour toute la page sans exceptions
+//propriétés de fichier, texte basique (font, couleur), style des liens
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -9,16 +12,18 @@ html {
     font-size: 62.5%;
 }
 body {
-    text-align: center;
     font-family: variables.$normfont;
     background: variables.$lavender;
     color: variables.$textwhite;
-}
-a{
-  text-decoration: none;
-  color: inherit;
-  font-family: inherit;
-}
-h1, h2, h3, h4, h5, h6{
-    font-family: variables.$titlefont;
+    a{
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: variables.$titlefont;
+    }
+    ul{
+        list-style-type: none;
+    }
 }

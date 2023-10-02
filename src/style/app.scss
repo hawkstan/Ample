@@ -1,0 +1,24 @@
+@use "variables.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    text-align: center;
+    font-family: variables.$normfont;
+    background: variables.$lavender;
+    color: variables.$textwhite;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: variables.$titlefont;
+}

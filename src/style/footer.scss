@@ -1,0 +1,17 @@
+@use "variables.scss";
+
+footer{
+    background-color: variables.$darkblue;
+    display: grid;
+    address{
+        display: grid;
+        ul{
+            display: flex;
+        }
+    }
+    section{
+        ul{
+            display: flex;
+        }
+    }
+}

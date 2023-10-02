@@ -1,17 +1,14 @@
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-  
-html {
-    font-size: 62.5%;
-}
-  
-body {
-    min-height: 100vh;
-    text-align: center;
-    font-size: 2rem;
-    background: #c2a7e7;
-    color: white;
-}
+//ce fichier est juste utilisé pour importer les différents fichiers
+//de style, dans leur ordre d'importance, avant de le traduire
+//pour toute modification : utiliser la commande
+//sass --watch src/style/index.scss src/style/index.css
+//pour que tout soit compilé dans index.css en temps réel
+//ne JAMAIS modifier index.css ou index.css.map directement
+
+@use "app.scss";
+@use "header.scss";
+@use "footer.scss";
+@use "home.scss";
+@use "infos.scss";
+@use "models.scss";
+@use "testimonies.scss";

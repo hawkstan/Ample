@@ -1,14 +1,17 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 //import mode from '../css/toggle'; //for a potential dark mode
 
-function Header() {
+export default function Header() {
     return(
         <header>
             <h1>Ample</h1>
             <nav>
                 <ul>
-                    <li><Link to="/home" >Accueil</Link></li>
+                    <li><Link to="/home">Accueil</Link></li>
+                    <li><Link to="/models">Modèles</Link></li>
+                    <li><Link to="/testimonies">Témoignages écrits</Link></li>
+                    <li><Link to="/infos">Posts info</Link></li>
+                    <li><Link to="/project">Ce projet</Link></li>
                 </ul>
             </nav>
             {/* <button 
@@ -20,6 +23,4 @@ function Header() {
             </button> */}
         </header>        
     )
-}
-
-export default Header;
+};

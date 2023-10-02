@@ -1,6 +1,4 @@
-import React from 'react';
-
-function NoRoute(){
+export default function NoRoute(){
     return (
         <main>
             <h3>ERROR</h3>
@@ -9,5 +7,3 @@ function NoRoute(){
         </main>
     );
 }
-
-export default NoRoute;

@@ -1,4 +1,7 @@
 import logoAmple from "../img/logoAmple.png";
+import IHECS from "../img/IHECS.png";
+import ixelles from "../img/ixelles.png";
+import weartxl from "../img/weartxl.png";
 
 export default function Footer() {
     return(
@@ -13,9 +16,9 @@ export default function Footer() {
             </address>
             <section>
                 <ul>
-                    <li>logo école</li>
-                    <li>logo rouge vert</li>
-                    <li>ixelles elsène</li>
+                    <li><img src={IHECS} alt="logo de l'IHECS" /></li>
+                    <li><img src={weartxl} alt="logo de WeArtXL" /></li>
+                    <li><img src={ixelles} alt="logo de la commune d'Ixelles Elsène" /></li>
                 </ul>
             </section>
         </footer>

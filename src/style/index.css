@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -50,20 +50,69 @@ header nav ul li {
 }
 
 footer {
-  background-color: #151730;
   display: grid;
+  justify-items: center;
 }
-footer img {
-  height: 10rem;
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 1.5rem;
+  }
+  footer .logoAmple {
+    height: 10rem;
+  }
 }
 footer address {
   display: grid;
+  font-style: normal;
+  margin-bottom: 2rem;
 }
 footer address ul {
   display: flex;
+  justify-content: center;
+}
+footer address ul li {
+  margin: 0.5rem;
+}
+footer address ul li .icons {
+  height: 5rem;
+  color: #f2f2f2;
+}
+footer address span {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  margin-bottom: 1rem;
 }
 footer section ul {
   display: flex;
+}
+@media screen and (max-width: 500px) {
+  footer section ul img {
+    height: 7rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  main p {
+    font-size: 1.5rem;
+  }
+  main h3 {
+    font-size: 2.5rem;
+    font-weight: medium;
+  }
+}
+main .about {
+  background-color: #151730;
+  text-align: center;
+}
+main .about h1 {
+  text-decoration: underline #ef4f0b 0.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

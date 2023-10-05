@@ -1,2 +1,25 @@
 @use "variables.scss";
 
+main{
+    @media screen and (max-width: 500px) {
+        h1{
+            font-size: variables.$mobtitlesize;
+            font-weight: variables.$mobtitleweight;
+        }
+        p{
+            font-size: variables.$mobsize;
+        }
+        h3{
+            font-size: variables.$mobsubsize;
+            font-weight: variables.$mobsubweight;
+        }
+    }
+    .about{
+        
+        background-color: variables.$darkblue;
+        text-align: center;
+        h1{
+            text-decoration: underline variables.$oranj 0.2rem;
+        }
+    }
+}

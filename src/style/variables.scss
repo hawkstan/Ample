@@ -1,8 +1,12 @@
 //ce fichier est pour les constantes : couleurs, polices
-//en modifier une ici les modifie partout où elle sont utilisées
+//en modifier une ici les modifient partout où elle sont utilisées
 //attention à ne pas changer les noms des variables par contre
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');//pour télécharcher les polices précises
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+//pour télécharcher les polices précises
+//à prendre ici si besoin de plus de style
+//https://fonts.google.com/specimen/Fredoka
+//https://fonts.google.com/specimen/Montserrat
 
 $lavender: #d0c4e8;
 $textwhite: #f2f2f2;
@@ -23,8 +27,10 @@ $websubsize: medium;
 $normfont: "Montserrat";
 $mobsize: 1.5rem;
 $mobhashsize: 4.5rem;
-$mobhashweight: semibold;
+$mobhashweight: 600;
+//"semi-bold" est pas valide comme mesure
+//mais 600 est sa valeur sur google fonts
 $websize: 3rem;
 $webweight: medium;
 $webhashsize: 12rem;
-$webhashweight: semibold;
+$webhashweight: 600;

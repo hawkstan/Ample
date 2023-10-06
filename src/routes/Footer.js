@@ -12,8 +12,8 @@ export default function Footer() {
             <img src={logoAmple} alt="une personne grosse d'apparence féminine assise sur le mot Ample" className="logoAmple" />
             <address>
                 <ul>
-                    <li><a href="https://www.instagram.com/projet.ample/?hl=fr"><FontAwesomeIcon icon={faInstagram} className="icons"/></a></li>
-                    <li><a href="https://www.youtube.com/"><FontAwesomeIcon icon={faYoutube} className="icons"/></a></li>
+                    <li><a href="https://www.instagram.com/projet.ample/?hl=fr" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="icons"/></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYoutube} className="icons"/></a></li>
                 </ul>
                 <span></span>
                 <a href="mailto:ample.projet@gmail.com">ample.projet@gmail.com</a>

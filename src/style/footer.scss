@@ -6,6 +6,13 @@ footer{
         .logoAmple{
             height: 10rem;
         }
+        span{
+            height: 0.3rem;
+            width: 100%;
+            background-color: variables.$textwhite;
+            border-radius: 100px;
+            margin-bottom: 1rem;
+        }
     }
     //--mask:
     //    radial-gradient(13.38rem at 50% 18.90rem,#000 99%,#0000 101%) calc(50% - 18rem) 0/36rem 100%,
@@ -27,13 +34,6 @@ footer{
                     color: variables.$textwhite;
                 }
             }
-        }
-        span{
-            height: 0.3rem;
-            width: 100%;
-            background-color: variables.$textwhite;
-            border-radius: 100px;
-            margin-bottom: 1rem;
         }
         margin-bottom: 2rem;
     }

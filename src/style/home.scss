@@ -8,7 +8,7 @@ main{
     h1{
         text-decoration: underline variables.$oranj 0.6rem;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
         font-size: variables.$mobsize;
         h1{
             font-size: variables.$mobtitlesize;
@@ -17,6 +17,17 @@ main{
         h3{
             font-size: variables.$mobsubsize;
             font-weight: variables.$mobsubweight;
+        }
+    }
+    @media screen and (min-width: 700px) {
+        font-size: variables.$websize;
+        h1{
+            font-size: variables.$webtitlesize;
+            font-weight: variables.$webtitleweight;
+        }
+        h3{
+            font-size: variables.$websubsize;
+            font-weight: variables.$websubweight;
         }
     }
     .about{
@@ -41,7 +52,7 @@ main{
             display: grid;
             justify-content: center;
             gap: 1rem;
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 700px) {
                 grid-template-columns: 45% 45%;
                 li{
                     position: relative;
@@ -59,6 +70,34 @@ main{
                     img{
                         display: block;
                         height: 30rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    h3{
+                        margin-top: 30rem;
+                    }
+                }
+            }
+            @media screen and (min-width: 700px) {
+                grid-template-columns: 30% 30% 30%;
+                li{
+                    position: relative;
+                    .background{
+                        background-color: variables.$textwhite;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 20rem;
+                        height: 20rem;
+                        border-radius: 50%;
+                        z-index: -5;
+                    }
+                    img{
+                        display: block;
+                        height: 35rem;
                         position: absolute;
                         top: 50%;
                         left: 50%;

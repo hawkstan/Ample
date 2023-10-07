@@ -43,7 +43,7 @@ export default function Home(){
                     </li>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Melissa} alt="une personne grosse d'apparence féminine, assise en tailleur" useMap="#map-melisse" />
+                            <img src={Melissa} alt="une personne grosse d'apparence féminine, assise en tailleur" useMap="#map-melissa" />
                             <div className="background"></div>
                             <Link to="/Melissa"><h3>Melissa</h3></Link>
                             <map name="map-melissa">

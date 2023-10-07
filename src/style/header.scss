@@ -2,7 +2,13 @@
 
 header{
     color: variables.$darkblue;
-    @media screen and (max-width: 500px) {
+    nav{
+        background-color: variables.$textwhite;
+        li{
+            border: 0.2rem solid variables.$darkblue;
+        }
+    }
+    @media screen and (max-width: 700px) {
         font-size: variables.$mobsize;
         img{
             height: 15rem;
@@ -10,14 +16,15 @@ header{
             display: block;
         }
     }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 700px) {
+        font-size: variables.$websize;
         display: flex;
         img{
             height: 10rem;
         }
         nav{
-            background-color: variables.$textwhite;
             ul{
+                text-align: center;
                 display: flex;
             }
         }

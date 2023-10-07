@@ -1,7 +1,7 @@
 @use "variables.scss";
 
 footer{
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
         font-size: variables.$mobsize;
         .logoAmple{
             height: 10rem;
@@ -12,6 +12,12 @@ footer{
             background-color: variables.$textwhite;
             border-radius: 100px;
             margin-bottom: 1rem;
+        }
+    }
+    @media screen and (min-width: 700px){
+        font-size: variables.$websize;
+        .logoAmple{
+            height: 15rem;
         }
     }
     //--mask:
@@ -40,7 +46,7 @@ footer{
     section{
         ul{
             display: flex;
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 700px) {
                 img{
                     height: 7rem;
                     padding: 1rem;

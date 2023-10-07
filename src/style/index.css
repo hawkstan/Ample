@@ -26,7 +26,7 @@ body ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header {
   color: #151730;
 }
 @media screen and (max-width: 500px) {
@@ -39,13 +39,9 @@ header nav ul li {
 @media screen and (min-width: 500px) {
   header {
     display: flex;
-    align-content: space-between;
   }
   header img {
     height: 10rem;
-  }
-  header ul {
-    display: flex;
   }
 }
 
@@ -104,12 +100,12 @@ main h1 {
   text-decoration: underline #ef4f0b 0.6rem;
 }
 @media screen and (max-width: 500px) {
+  main {
+    font-size: 1.5rem;
+  }
   main h1 {
     font-size: 3.5rem;
     font-weight: 700;
-  }
-  main p {
-    font-size: 1.5rem;
   }
   main h3 {
     font-size: 2.5rem;
@@ -117,12 +113,18 @@ main h1 {
   }
 }
 main .about {
-  padding: 6rem;
+  padding: 6rem 5rem;
   background-color: #151730;
+}
+main .about p {
+  padding-top: 2rem;
+}
+main .about .button {
+  padding-top: 3rem;
 }
 main .about .button a {
   background-color: #ef4f0b;
-  padding: 1rem 2rem;
+  padding: 1rem 6rem;
   border-radius: 50px;
 }
 main .modelsBlurb {
@@ -167,6 +169,59 @@ main .modelsBlurb ul {
 
 footer {
   background-color: #151730;
+}
+
+@media screen and (max-width: 500px) {
+  header .burger-menu {
+    position: fixed;
+    top: 0;
+    left: 600rem;
+    width: 25rem;
+    height: 100%;
+    background-color: #f2f2f2;
+    transition: left 0.3s ease-in-out;
+  }
+  header .burgerMenu.open {
+    left: 0;
+  }
+  header .burgerToggle {
+    background: none;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+  }
+  header .burgerToggle .bar {
+    background-color: #f2f2f2;
+    height: 3px;
+    width: 25px;
+    margin: 5px auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  header .ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+  }
+  header .ul li {
+    margin-bottom: 20px;
+  }
+  header .ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    transition: color 0.3s ease-in-out;
+  }
+}
+@media screen and (min-width: 500px) {
+  header .burgerToggle {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

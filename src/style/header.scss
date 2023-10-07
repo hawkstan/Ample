@@ -1,31 +1,18 @@
 @use "variables.scss";
 
 header{
-    nav{
-        ul{
-            li{
-                color: variables.$darkblue;
-            }
-        }
-    }
+    color: variables.$darkblue;
     @media screen and (max-width: 500px) {
         img{
             height: 15rem;
             margin: auto;
             display: block;
         }
-        .burger{
-            //lol borgir
-        }
     }
     @media screen and (min-width: 500px) {
         display: flex;
-        align-content: space-between;
         img{
             height: 10rem;
-        }
-        ul{
-            display: flex;
         }
     }
 }

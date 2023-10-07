@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const BurgerMenu = () => {
+export default function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -9,21 +9,31 @@ const BurgerMenu = () => {
   };
 
   return (
-    <div className={`burger-menu ${isOpen ? 'open' : ''}`}>
-      <button className="burger-toggle" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </button>
-      <ul className="menu-list">
-        <li><Link to="/home">Accueil</Link></li>
-        <li><Link to="/models">Modèles</Link></li>
-        <li><Link to="/testimonies">Témoignages écrits</Link></li>
-        <li><Link to="/infos">Posts info</Link></li>
-        <li><Link to="/project">Ce projet</Link></li>
-      </ul>
+    <div className={`burgerMenu ${isOpen ? 'open' : ''}`}>
+        <button className="burgerToggle" onClick={toggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+        </button>
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/home">Accueil</Link>
+                </li>
+                <li>
+                    <Link to="/models">Modèles</Link>
+                </li>
+                <li>
+                    <Link to="/testimonies">Témoignages écrits</Link>
+                </li>
+                <li>
+                    <Link to="/infos">Posts info</Link>
+                </li>
+                <li>
+                    <Link to="/project">Ce projet</Link>
+                </li>
+            </ul>
+        </nav>
     </div>
   );
 };
-
-export default BurgerMenu;

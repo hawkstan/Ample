@@ -3,6 +3,7 @@
 header{
     color: variables.$darkblue;
     @media screen and (max-width: 500px) {
+        font-size: variables.$mobsize;
         img{
             height: 15rem;
             margin: auto;
@@ -13,6 +14,12 @@ header{
         display: flex;
         img{
             height: 10rem;
+        }
+        nav{
+            background-color: variables.$textwhite;
+            ul{
+                display: flex;
+            }
         }
     }
 }

@@ -2,57 +2,73 @@
 
 header{
     @media screen and (max-width: 500px) {
-        .burger-menu{
-            position: fixed;
-            top: 0;
-            left: 600rem;
-            width: 25rem;
-            height: 100%;
-            background-color: variables.$textwhite;
-            transition: left 0.3s ease-in-out;
-        }
-        .burgerMenu.open {
-            left: 0;
+        nav{
+            display: none;
         }
         .burgerToggle {
             background: none;
             border: none;
-            padding: 20px;
+            padding: 2rem;
             cursor: pointer;
-            .bar {
+            .barTop, .barMid {
                 background-color: variables.$textwhite;
-                height: 3px;
-                width: 25px;
-                margin: 5px auto;
-                transition: transform 0.3s ease-in-out;
+                height: 0.5rem;
+                width: 3.5rem;
+                margin: 0.5rem auto;
+                border-radius: 5rem;
+            }
+            .barBot{
+                background-color: variables.$textwhite;
+                height: 0.5rem;
+                width: 2rem;
+                margin-left: 40%;
+                border-radius: 5rem;
             }
         }
-        .ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            padding-top: 100px;
-            li{
-                margin-bottom: 20px;
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 20px;
-                    display: block;
-                    transition: color 0.3s ease-in-out;
+        .burgerMenu.open {
+            width: fit-content;
+            background-color: variables.$textwhite;
+            .burgerToggle{
+                position: relative;
+                left: 10rem;
+                .barTop{
+                    height: 0.8rem;
+                    background-color: variables.$darkblue;
+                    transform: rotate(-45deg);
+                    transition-duration: 0.4s;
+                    translate: 0 0.65rem;
+                }
+                .barMid{
+                    height: 0.8rem;
+                    background-color: variables.$darkblue;
+                    transform: rotate(45deg);
+                    transition-duration: 0.4s;
+                    translate: 0 -0.65rem;
+                }
+                .barBot{
+                    display: none;
                 }
             }
+            nav{
+                display: block;
+                text-align: center;
+                li{
+                    padding: 1rem;
+                    border: 0.2rem solid variables.$darkblue;
+                }
+            }
+        }
+        .burgerMenu{
+            z-index: 15;
+            width: fit-content;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
     @media screen and (min-width: 500px) {
         .burgerToggle{
             display: none;
-        }
-        nav{
-            ul{
-                display: flex;
-            }
         }
     }
 }

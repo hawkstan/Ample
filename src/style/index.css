@@ -30,6 +30,9 @@ header {
   color: #151730;
 }
 @media screen and (max-width: 500px) {
+  header {
+    font-size: 1.5rem;
+  }
   header img {
     height: 15rem;
     margin: auto;
@@ -42,6 +45,12 @@ header {
   }
   header img {
     height: 10rem;
+  }
+  header nav {
+    background-color: #f2f2f2;
+  }
+  header nav ul {
+    display: flex;
   }
 }
 
@@ -172,55 +181,73 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  header .burger-menu {
-    position: fixed;
-    top: 0;
-    left: 600rem;
-    width: 25rem;
-    height: 100%;
-    background-color: #f2f2f2;
-    transition: left 0.3s ease-in-out;
-  }
-  header .burgerMenu.open {
-    left: 0;
+  header nav {
+    display: none;
   }
   header .burgerToggle {
     background: none;
     border: none;
-    padding: 20px;
+    padding: 2rem;
     cursor: pointer;
   }
-  header .burgerToggle .bar {
+  header .burgerToggle .barTop, header .burgerToggle .barMid {
     background-color: #f2f2f2;
-    height: 3px;
-    width: 25px;
-    margin: 5px auto;
-    transition: transform 0.3s ease-in-out;
+    height: 0.5rem;
+    width: 3.5rem;
+    margin: 0.5rem auto;
+    border-radius: 5rem;
   }
-  header .ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    padding-top: 100px;
+  header .burgerToggle .barBot {
+    background-color: #f2f2f2;
+    height: 0.5rem;
+    width: 2rem;
+    margin-left: 40%;
+    border-radius: 5rem;
   }
-  header .ul li {
-    margin-bottom: 20px;
+  header .burgerMenu.open {
+    width: fit-content;
+    background-color: #f2f2f2;
   }
-  header .ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+  header .burgerMenu.open .burgerToggle {
+    position: relative;
+    left: 10rem;
+  }
+  header .burgerMenu.open .burgerToggle .barTop {
+    height: 0.8rem;
+    background-color: #151730;
+    transform: rotate(-45deg);
+    transition-duration: 0.4s;
+    translate: 0 0.65rem;
+  }
+  header .burgerMenu.open .burgerToggle .barMid {
+    height: 0.8rem;
+    background-color: #151730;
+    transform: rotate(45deg);
+    transition-duration: 0.4s;
+    translate: 0 -0.65rem;
+  }
+  header .burgerMenu.open .burgerToggle .barBot {
+    display: none;
+  }
+  header .burgerMenu.open nav {
     display: block;
-    transition: color 0.3s ease-in-out;
+    text-align: center;
+  }
+  header .burgerMenu.open nav li {
+    padding: 1rem;
+    border: 0.2rem solid #151730;
+  }
+  header .burgerMenu {
+    z-index: 15;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 @media screen and (min-width: 500px) {
   header .burgerToggle {
     display: none;
-  }
-  header nav ul {
-    display: flex;
   }
 }
 

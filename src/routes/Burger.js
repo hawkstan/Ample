@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function BurgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setOpen(!open);
   };
 
   return (
-    <div className={`burgerMenu ${isOpen ? 'open' : ''}`}>
+    <div className={`burgerMenu ${open ? 'open' : ''}`}>
         <button className="burgerToggle" onClick={toggleMenu}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
+            <div className="barTop"></div>
+            <div className="barMid"></div>
+            <div className="barBot"></div>
         </button>
         <nav>
             <ul>

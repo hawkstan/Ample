@@ -9,12 +9,10 @@ main{
         text-decoration: underline variables.$oranj 0.6rem;
     }
     @media screen and (max-width: 500px) {
+        font-size: variables.$mobsize;
         h1{
             font-size: variables.$mobtitlesize;
             font-weight: variables.$mobtitleweight;
-        }
-        p{
-            font-size: variables.$mobsize;
         }
         h3{
             font-size: variables.$mobsubsize;
@@ -22,12 +20,16 @@ main{
         }
     }
     .about{
-        padding: 6rem;
+        padding: 6rem 5rem;
         background-color: variables.$darkblue;
+        p{
+            padding-top: 2rem;
+        }
         .button{
+            padding-top: 3rem;
             a{
                 background-color: variables.$oranj;
-                padding: 1rem 2rem;
+                padding: 1rem 6rem;
                 border-radius: 50px;
             }
         }

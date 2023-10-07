@@ -25,15 +25,15 @@ export default function Home(){
                     <br/><br/>
                     Au travers du projet Ample, on souhaite non seulement donner la parole et de la visibilité aux personnes grosses, mettre en lumière la grossophobie de l'espace public, montrer la beauté des corps gros, mais aussi sensibiliser les personnes non concernées à leurs propres comportements et biais grossophobes.
                     <br/><br/>
-                    <div className="button"><Link to="/infos">+ d'infos</Link></div>
                 </p>
+                <div className="button"><Link to="/infos">+ d'infos</Link></div>
             </section>
             <section className="modelsBlurb">
                 <h1>Nos intervenant.es</h1>
                 <ul>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Rabi} alt="une personne grosse d'apparence féminine, debout" usemap="#map-rabi" />
+                            <img src={Rabi} alt="une personne grosse d'apparence féminine, debout" useMap="#map-rabi" />
                             <div className="background"></div>
                         </div>
                         <Link to="/Rabi"><h3>Rabi</h3></Link>
@@ -43,7 +43,7 @@ export default function Home(){
                     </li>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Melissa} alt="une personne grosse d'apparence féminine, assise en tailleur" usemap="#map-melisse" />
+                            <img src={Melissa} alt="une personne grosse d'apparence féminine, assise en tailleur" useMap="#map-melisse" />
                             <div className="background"></div>
                             <Link to="/Melissa"><h3>Melissa</h3></Link>
                             <map name="map-melissa">
@@ -53,7 +53,7 @@ export default function Home(){
                     </li>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Loic} alt="une personne grosse d'apparence masculine, debout" usemap="#map-loic" />
+                            <img src={Loic} alt="une personne grosse d'apparence masculine, debout" useMap="#map-loic" />
                             <div className="background"></div>
                             <Link to="/Loic"><h3>Loïc</h3></Link>
                             <map name="map-loic">
@@ -63,7 +63,7 @@ export default function Home(){
                     </li>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Cassandra} alt="une personne grosse d'apparence féminine, à genoux" usemap="#map-cassandra" />
+                            <img src={Cassandra} alt="une personne grosse d'apparence féminine, à genoux" useMap="#map-cassandra" />
                             <div className="background"></div>
                             <Link to="/Cassandra"><h3>Cassandra</h3></Link>
                             <map name="map-cassandra">
@@ -73,7 +73,7 @@ export default function Home(){
                     </li>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Adeline} alt="une personne grosse d'apparence féminine, assise avec une jambe temdue et l'autre pliée" usemap="#map-adeline" />
+                            <img src={Adeline} alt="une personne grosse d'apparence féminine, assise avec une jambe temdue et l'autre pliée" useMap="#map-adeline" />
                             <div className="background"></div>
                             <Link to="/Adeline"><h3>Adeline</h3></Link>
                             <map name="map-adeline">
@@ -83,7 +83,7 @@ export default function Home(){
                     </li>
                     <li>
                         <div className="image-wrapper">
-                            <img src={Emma} alt="une personne grosse d'apparence féminine, assise avec une jambe pliée sous l'autre" usemap="#map-emma" />
+                            <img src={Emma} alt="une personne grosse d'apparence féminine, assise avec une jambe pliée sous l'autre" useMap="#map-emma" />
                             <div className="background"></div>
                             <Link to="/Emma"><h3>Emma</h3></Link>
                             <map name="map-emma">

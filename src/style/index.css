@@ -171,7 +171,44 @@ main .modelsBlurb ul {
   justify-content: center;
   gap: 1rem;
 }
-@media screen and (max-width: 700px) {
+main .modelsBlurb ul li {
+  position: relative;
+}
+main .modelsBlurb ul li .background {
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -5;
+}
+main .modelsBlurb ul li img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 400px) {
+  main .modelsBlurb ul {
+    grid-template-columns: 40% 40%;
+  }
+  main .modelsBlurb ul li {
+    position: relative;
+  }
+  main .modelsBlurb ul li .background {
+    width: 14rem;
+    height: 14rem;
+  }
+  main .modelsBlurb ul li img {
+    height: 25rem;
+  }
+  main .modelsBlurb ul li h3 {
+    margin-top: 25rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
   main .modelsBlurb ul {
     grid-template-columns: 45% 45%;
   }
@@ -179,23 +216,11 @@ main .modelsBlurb ul {
     position: relative;
   }
   main .modelsBlurb ul li .background {
-    background-color: #f2f2f2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 18rem;
     height: 18rem;
-    border-radius: 50%;
-    z-index: -5;
   }
   main .modelsBlurb ul li img {
-    display: block;
     height: 30rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   main .modelsBlurb ul li h3 {
     margin-top: 30rem;
@@ -209,23 +234,11 @@ main .modelsBlurb ul {
     position: relative;
   }
   main .modelsBlurb ul li .background {
-    background-color: #f2f2f2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 20rem;
     height: 20rem;
-    border-radius: 50%;
-    z-index: -5;
   }
   main .modelsBlurb ul li img {
-    display: block;
     height: 35rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   main .modelsBlurb ul li h3 {
     margin-top: 30rem;

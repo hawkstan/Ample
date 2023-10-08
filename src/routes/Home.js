@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
-import { HashRouter as Router, Route } from 'react-router-dom';
-import EmmaPage from './models/Emma';
 import Rabi from "../img/Rabi.png";
 import Melissa from "../img/Melissa.png";
 import Loic from "../img/Loic.png";
 import Cassandra from "../img/Cassandra.png";
 import Adeline from "../img/Adeline.png";
 import Emma from "../img/Emma.png";
-
-<Router>
-  <Route path="/Emma" component={EmmaPage} />
-  {/* Add more routes as needed */}
-</Router>
 
 export default function Home(){
     return (
@@ -92,7 +85,9 @@ export default function Home(){
                         </div>
                     </li>
                     {/* image-map sert à empêcher que l'image entière soit un lien, pour diminuer les missclicks
-                    les coordonnées seront à modifier si la taille des images change*/}
+                    les coordonnées seront à modifier si la taille des images change
+                    look up if it's possible to change map with img size
+                    maybe display none ? look up later*/}
                 </ul>
             </section>
         </main>

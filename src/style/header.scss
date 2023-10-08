@@ -7,6 +7,9 @@ header{
         li{
             border: 0.2rem solid variables.$darkblue;
         }
+        .active{
+            text-decoration: underline variables.$oranj 0.2rem;
+        }
     }
     @media screen and (max-width: 700px) {
         font-size: variables.$mobsize;

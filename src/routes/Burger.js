@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function BurgerMenu() {
   const [open, setOpen] = useState(false);
@@ -18,19 +18,19 @@ export default function BurgerMenu() {
         <nav>
             <ul>
                 <li>
-                    <Link to="/home">Accueil</Link>
+                    <NavLink to="/home" activeclassname="active">Accueil</NavLink>
                 </li>
                 <li>
-                    <Link to="/models">Modèles</Link>
+                    <NavLink to="/models" activeclassname="active">Modèles</NavLink>
                 </li>
                 <li>
-                    <Link to="/testimonies">Témoignages écrits</Link>
+                    <NavLink to="/testimonies" activeclassname="active">Témoignages écrits</NavLink>
                 </li>
                 <li>
-                    <Link to="/infos">Posts info</Link>
+                    <NavLink to="/infos" activeclassname="active">Posts info</NavLink>
                 </li>
                 <li>
-                    <Link to="/project">Ce projet</Link>
+                    <NavLink to="/project" activeclassname="active">Ce projet</NavLink>
                 </li>
             </ul>
         </nav>

@@ -35,6 +35,9 @@ header nav {
 header nav li {
   border: 0.2rem solid #151730;
 }
+header nav .active {
+  text-decoration: underline #ef4f0b 0.2rem;
+}
 @media screen and (max-width: 700px) {
   header {
     font-size: 1.5rem;
@@ -56,59 +59,6 @@ header nav li {
   header nav ul {
     text-align: center;
     display: flex;
-  }
-}
-
-footer {
-  display: grid;
-  justify-items: center;
-}
-@media screen and (max-width: 700px) {
-  footer {
-    font-size: 1.5rem;
-  }
-  footer .logoAmple {
-    height: 10rem;
-  }
-  footer span {
-    height: 0.3rem;
-    width: 100%;
-    background-color: #f2f2f2;
-    border-radius: 100px;
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (min-width: 700px) {
-  footer {
-    font-size: 3rem;
-  }
-  footer .logoAmple {
-    height: 15rem;
-  }
-}
-footer address {
-  display: grid;
-  font-style: normal;
-  margin-bottom: 2rem;
-}
-footer address ul {
-  display: flex;
-  justify-content: center;
-}
-footer address ul li {
-  margin: 0.5rem;
-}
-footer address ul li .icons {
-  height: 5rem;
-  color: #f2f2f2;
-}
-footer section ul {
-  display: flex;
-}
-@media screen and (max-width: 700px) {
-  footer section ul img {
-    height: 7rem;
-    padding: 1rem;
   }
 }
 
@@ -245,10 +195,6 @@ main .modelsBlurb ul li img {
   }
 }
 
-footer {
-  background-color: #151730;
-}
-
 @media screen and (max-width: 700px) {
   header nav {
     display: none;
@@ -317,6 +263,63 @@ footer {
   header .burgerToggle {
     display: none;
   }
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    font-size: 1.5rem;
+  }
+  footer .logoAmple {
+    height: 10rem;
+  }
+  footer span {
+    height: 0.3rem;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer {
+    font-size: 3rem;
+  }
+  footer .logoAmple {
+    height: 15rem;
+  }
+}
+footer address {
+  display: grid;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+footer address ul {
+  display: flex;
+  justify-content: center;
+}
+footer address ul li {
+  margin: 0.5rem;
+}
+footer address ul li .icons {
+  height: 5rem;
+  color: #f2f2f2;
+}
+footer section ul {
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  footer section ul img {
+    height: 7rem;
+    padding: 1rem;
+  }
+}
+
+.footerSpecialColor {
+  background-color: #151730;
 }
 
 /*# sourceMappingURL=index.css.map */

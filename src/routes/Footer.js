@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-export default function Footer() {
+export default function Footer({ style }) {
     return(
-        <footer>
+        <footer style={style}>
             <img src={logoAmple} alt="une personne grosse d'apparence féminine assise sur le mot Ample" className="logoAmple" />
             <address>
                 <ul>

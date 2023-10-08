@@ -13,6 +13,10 @@ $textwhite: #f2f2f2;
 $darkblue: #151730;
 $oranj: #ef4f0b;
 $lilblue: #c8d9ed;
+//note: le seul endroit où ces variables ne sont pas utilisées
+//et où elles devraient donc être remplacées manuellement si
+//changement, est dans le fichier Layout.js, lignes 12 à 17,
+//quand on gère les changements de couleur de fond de footer
 
 $titlefont: "Fredoka";
 $mobtitlesize: 3.5rem;

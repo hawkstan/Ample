@@ -13,15 +13,42 @@ html {
 }
 body {
     font-family: variables.$normfont;
-    background: variables.$lavender;
+    background-color: variables.$darkblue;
     color: variables.$textwhite;
+    @media screen and (max-width: 849px) {
+        font-size: variables.$mobsize;
+    }
+    @media screen and (min-width: 850px) {
+        font-size: variables.$websize;
+        font-weight: variables.$webweight;
+    }
     a{
         text-decoration: none;
         color: inherit;
         font-family: inherit;
     }
-    h1, h2, h3, h4, h5, h6{
+    h1{
         font-family: variables.$titlefont;
+        text-transform: uppercase;
+        @media screen and (max-width: 849px) {
+            font-size: variables.$mobtitlesize;
+            font-weight: variables.$mobtitleweight;
+        }
+        @media screen and (min-width: 850px) {
+            font-size: variables.$webtitlesize;
+            font-weight: variables.$webtitleweight;
+        }
+    }
+    h3{
+        font-family: variables.$titlefont;
+        @media screen and (max-width: 849px) {
+            font-size: variables.$mobsubsize;
+            font-weight: variables.$mobsubweight;
+        }
+        @media screen and (min-width: 850px) {
+            font-size: variables.$websubsize;
+            font-weight: variables.$websubweight;
+        }
     }
     ul{
         list-style-type: none;

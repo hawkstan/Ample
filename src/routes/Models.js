@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Models(){
     return (
-        <main>
+        <main className="models">
             <h3>Nos modèles</h3>
             <p>texte</p>
             <ul>

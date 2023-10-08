@@ -8,7 +8,7 @@ import Emma from "../img/Emma.png";
 
 export default function Home(){
     return (
-        <main>
+        <main className="homepage">
             <section className="about">
                 <h1>About us</h1>
                 <p>

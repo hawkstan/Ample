@@ -1,0 +1,15 @@
+@use "variables.scss";
+
+.project{
+    .hash{
+        color: variables.$oranj;
+        @media screen and (max-width: 849px) {
+            font-size: variables.$mobhashsize;
+            font-weight: variables.$mobhashweight;
+        }
+        @media screen and (min-width: 850px) {
+            font-size: variables.$webhashsize;
+            font-weight: variables.$webhashweight;
+        }
+    }
+}

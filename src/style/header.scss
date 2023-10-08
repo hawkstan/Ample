@@ -2,6 +2,7 @@
 
 header{
     color: variables.$darkblue;
+    background-color: variables.$lavender;
     @media screen and (max-width: 849px) {
         font-size: variables.$mobsize;
         padding: 3rem 0;

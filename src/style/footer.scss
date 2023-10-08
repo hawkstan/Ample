@@ -1,60 +1,108 @@
 @use "variables.scss";
 
 footer{
-    @media screen and (max-width: 700px) {
-        font-size: variables.$mobsize;
-        .logoAmple{
-            height: 10rem;
-        }
-        span{
-            height: 0.3rem;
-            width: 100%;
-            background-color: variables.$textwhite;
-            border-radius: 100px;
-            margin-bottom: 1rem;
-        }
+    --mask:
+        radial-gradient(55.90rem at 50% 75.00rem,#000 99%,#0000 101%) calc(50% - 50rem) 0/100rem 100%,
+        radial-gradient(55.90rem at 50% -50rem,#0000 99%,#000 101%) 50% 25rem/100rem 100% repeat-x;
+    --webkit-mask: var(--mask);
+          mask: var(--mask);
+    //pour l'effet ondulé, pour modiifier, utiliser
+    //https://css-generators.com/wavy-shapes/
+    padding: 3rem 4rem;
+    .logoAmple{
+        margin-top: 35rem;
     }
-    @media screen and (min-width: 700px){
-        font-size: variables.$websize;
-        .logoAmple{
-            height: 15rem;
-        }
-    }
-    //--mask:
-    //    radial-gradient(13.38rem at 50% 18.90rem,#000 99%,#0000 101%) calc(50% - 18rem) 0/36rem 100%,
-    //    radial-gradient(13.38rem at 50% -9.9rem,#0000 99%,#000 101%) 50% 9rem/36rem 100% repeat-x;
-    //-webkit-mask: var(--mask);
-    //        mask: var(--mask);
-    display: grid;
-    justify-items: center;
     address{
-        display: grid;
         font-style: normal;
+    }
+    .logos{
         ul{
             display: flex;
-            justify-content: center;
-            li{
-                margin: 0.5rem;
-                .icons{
-                    height: 5rem;
-                    color: variables.$textwhite;
-                }
-            }
-        }
-        margin-bottom: 2rem;
-    }
-    section{
-        ul{
-            display: flex;
-            @media screen and (max-width: 700px) {
-                img{
-                    height: 7rem;
-                    padding: 1rem;
-                }
-            }
         }
     }
-}
-.footerSpecialColor{
-    background-color: variables.$darkblue;
+    @media screen and (max-width: 849px) {
+        font-size: variables.$mobsize;
+        display: grid;
+        justify-items: center;
+        .contact{
+            display: inherit;
+            justify-items: center;
+            .logoAmple{
+                height: 10rem;
+            }
+            .mobBar{
+                height: 0.3rem;
+                width: 100%;
+                background-color: variables.$textwhite;
+                border-radius: 5rem;
+                margin-bottom: 1rem;
+            }
+            address{
+                display: grid;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        margin: 0.5rem;
+                        .icons{
+                            height: 5rem;
+                        }
+                    }
+                }
+                margin-bottom: 2rem;
+            }
+        }
+        .logos{
+            img{
+                height: 7rem;
+                margin: 1rem;
+            }
+        }
+    }
+    @media screen and (min-width: 850px){
+        font-size: variables.$websize;
+        font-weight: variables.$webweight;
+        .contact{
+            display: grid;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            grid-template-columns: 1fr 1fr;
+            overflow: visible;
+            .logoAmple{
+                height: 25rem;
+            }
+            address{
+                margin-top: 42rem;
+                text-align: end;
+                ul{
+                    display: flex;
+                    justify-content: end;
+                    li{
+                        margin: 0.5rem;
+                        .icons{
+                            height: 10rem;
+                        }
+                    }
+                }
+            }
+            .webBar{
+                grid-column-start: span 2;
+                height: 0.5rem;
+                width: 100%;
+                background-color: variables.$textwhite;
+                border-radius: 5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .logos{
+            ul{
+                justify-content: center;
+            }
+            img{
+                height: 12rem;
+                margin: 2rem;
+            }
+        }
+    }
 }

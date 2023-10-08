@@ -2,33 +2,48 @@
 
 header{
     color: variables.$darkblue;
-    nav{
-        background-color: variables.$textwhite;
-        li{
-            border: 0.2rem solid variables.$darkblue;
-        }
-        .active{
-            text-decoration: underline variables.$oranj 0.2rem;
-        }
-    }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 849px) {
         font-size: variables.$mobsize;
+        padding: 3rem 0;
+        nav{
+            .active{
+                text-decoration: underline variables.$oranj 0.2rem;
+            }
+        }
         img{
             height: 15rem;
             margin: auto;
             display: block;
         }
     }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 850px) {
+        font-family: variables.$titlefont;
+        font-weight: variables.$webtitleweight;
+        text-transform: uppercase;
         font-size: variables.$websize;
         display: flex;
+        justify-content: space-between;
         img{
-            height: 10rem;
+            height: 20rem;
+        }
+        .burgerMenu{
+            align-self: flex-end;
+            padding-bottom: 3rem;
+            padding-right: 3rem;
         }
         nav{
             ul{
                 text-align: center;
                 display: flex;
+                li{
+                    padding-right: 4rem;
+                    a:hover{
+                        color: variables.$oranj;
+                    }
+                }
+            }
+            .active{
+                text-decoration: underline variables.$oranj 0.6rem;
             }
         }
     }

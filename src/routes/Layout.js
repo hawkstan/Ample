@@ -10,7 +10,9 @@ export default function Layout() {
     const location = useLocation();
     const getFooterColor = () => {
         const { pathname } = location;
-        if (pathname === "/home") {
+        if (pathname === "/") {
+            return "#151730";
+        } else if (pathname === "/home") {
             return "#151730";
         } else {
             return "#d0c4e8";

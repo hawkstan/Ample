@@ -6,12 +6,12 @@ export default function Models(){
             <h3>Nos modèles</h3>
             <p>texte</p>
             <ul>
-                <Link to="/Rabi">Rabi</Link>
-                <Link to="/Melissa">Melissa</Link>
-                <Link to="/Loic">Loic</Link>
-                <Link to="/Cassandra">Cassandra</Link>
-                <Link to="/Adeline">Adeline</Link>
-                <Link to="/Emma">Emma</Link>
+                <Link to="/models/Rabi">Rabi</Link>
+                <Link to="/models/Melissa">Melissa</Link>
+                <Link to="/models/Loic">Loic</Link>
+                <Link to="/models/Cassandra">Cassandra</Link>
+                <Link to="/models/Adeline">Adeline</Link>
+                <Link to="/models/Emma">Emma</Link>
             </ul>
         </main>
     );

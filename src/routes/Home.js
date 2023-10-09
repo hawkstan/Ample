@@ -29,18 +29,18 @@ export default function Home(){
                             <img src={Rabi} alt="une personne grosse d'apparence féminine, debout" useMap="#map-rabi" />
                             <div className="background"></div>
                         </div>
-                        <Link to="/Rabi"><h3>Rabi</h3></Link>
+                        <Link to="/models/Rabi"><h3>Rabi</h3></Link>
                         <map name="map-rabi">
-                            <area shape="circle" coords="100,140,90" href="#/Rabi" alt="Clickable Area" />
+                            <area shape="circle" coords="100,140,90" href="#/models/Rabi" alt="Clickable Area" />
                         </map>
                     </li>
                     <li>
                         <div className="image-wrapper">
                             <img src={Melissa} alt="une personne grosse d'apparence féminine, assise en tailleur" useMap="#map-melissa" />
                             <div className="background"></div>
-                            <Link to="/Melissa"><h3>Melissa</h3></Link>
+                            <Link to="/models/Melissa"><h3>Melissa</h3></Link>
                             <map name="map-melissa">
-                                <area shape="circle" coords="100,140,90" href="#/Melissa" alt="Clickable Area" />
+                                <area shape="circle" coords="100,140,90" href="#/models/Melissa" alt="Clickable Area" />
                             </map>
                         </div>
                     </li>
@@ -48,9 +48,9 @@ export default function Home(){
                         <div className="image-wrapper">
                             <img src={Loic} alt="une personne grosse d'apparence masculine, debout" useMap="#map-loic" />
                             <div className="background"></div>
-                            <Link to="/Loic"><h3>Loïc</h3></Link>
+                            <Link to="/models/Loic"><h3>Loïc</h3></Link>
                             <map name="map-loic">
-                                <area shape="circle" coords="100,140,90" href="#/Loic" alt="Clickable Area" />
+                                <area shape="circle" coords="100,140,90" href="#/models/Loic" alt="Clickable Area" />
                             </map>
                         </div>
                     </li>
@@ -58,9 +58,9 @@ export default function Home(){
                         <div className="image-wrapper">
                             <img src={Cassandra} alt="une personne grosse d'apparence féminine, à genoux" useMap="#map-cassandra" />
                             <div className="background"></div>
-                            <Link to="/Cassandra"><h3>Cassandra</h3></Link>
+                            <Link to="/models/Cassandra"><h3>Cassandra</h3></Link>
                             <map name="map-cassandra">
-                                <area shape="circle" coords="100,140,90" href="#/Cassandra" alt="Clickable Area" />
+                                <area shape="circle" coords="100,140,90" href="#/models/Cassandra" alt="Clickable Area" />
                             </map>
                         </div>
                     </li>
@@ -68,9 +68,9 @@ export default function Home(){
                         <div className="image-wrapper">
                             <img src={Adeline} alt="une personne grosse d'apparence féminine, assise avec une jambe temdue et l'autre pliée" useMap="#map-adeline" />
                             <div className="background"></div>
-                            <Link to="/Adeline"><h3>Adeline</h3></Link>
+                            <Link to="/models/Adeline"><h3>Adeline</h3></Link>
                             <map name="map-adeline">
-                                <area shape="circle" coords="100,140,90" href="#/Adeline" alt="Clickable Area" />
+                                <area shape="circle" coords="100,140,90" href="#/models/Adeline" alt="Clickable Area" />
                             </map>
                         </div>
                     </li>
@@ -78,9 +78,9 @@ export default function Home(){
                         <div className="image-wrapper">
                             <img src={Emma} alt="une personne grosse d'apparence féminine, assise avec une jambe pliée sous l'autre" useMap="#map-emma" />
                             <div className="background"></div>
-                            <Link to="/Emma"><h3>Emma</h3></Link>
+                            <Link to="/models/Emma"><h3>Emma</h3></Link>
                             <map name="map-emma">
-                                <area shape="circle" coords="100,140,90" href="#/Emma" alt="Clickable Area" />
+                                <area shape="circle" coords="100,140,90" href="#/models/Emma" alt="Clickable Area" />
                             </map>
                         </div>
                     </li>

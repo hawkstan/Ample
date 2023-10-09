@@ -25,12 +25,12 @@ export default function App() {
               <Route path="testimonies" element ={<Testimonies/>}/>
               <Route path="infos" element ={<Infos/>}/>
               <Route path="project" element ={<Project/>}/>
-              <Route path="Rabi" element={<Rabi/>}/>
-              <Route path="Melissa" element ={<Melissa/>}/>
-              <Route path="Loic" element ={<Loic/>}/>
-              <Route path="Cassandra" element ={<Cassandra/>}/>
-              <Route path="Adeline" element ={<Adeline/>}/>
-              <Route path="Emma" element={<Emma />}/>
+              <Route path="models/Rabi" element={<Rabi/>}/>
+              <Route path="models/Melissa" element ={<Melissa/>}/>
+              <Route path="models/Loic" element ={<Loic/>}/>
+              <Route path="models/Cassandra" element ={<Cassandra/>}/>
+              <Route path="models/Adeline" element ={<Adeline/>}/>
+              <Route path="models/Emma" element={<Emma />}/>
               <Route path="*" element={<NoRoute />}/>
           </Route>
       </Routes>

@@ -261,6 +261,83 @@ header {
   }
 }
 
+.infos h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.infos .title {
+  text-align: center;
+}
+.infos .title a {
+  font-weight: bold;
+}
+.infos .title .rainbow {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+.infos .instaPost1 article, .infos .instaPost2 article {
+  background-color: #f2f2f2;
+  color: #151730;
+  border-radius: 5rem;
+}
+@media screen and (max-width: 849px) {
+  .infos {
+    padding: 5rem 5rem 10rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .infos .title h1 {
+    text-decoration: underline #ef4f0b 0.5rem;
+    margin-top: 35rem;
+  }
+  .infos .title p {
+    margin: 5rem 5% 2rem;
+  }
+  .infos .title .rainbow {
+    width: 85rem;
+    top: -20rem;
+  }
+  .infos .title .star {
+    height: 15rem;
+  }
+  .infos .instaPost1 article, .infos .instaPost2 article {
+    padding: 3rem;
+    height: 20rem;
+    width: 20rem;
+    margin: 5rem auto;
+  }
+  .infos .instaPost2 .hash, .infos .instaPost2 h4 {
+    text-align: end;
+  }
+}
+@media screen and (min-width: 850px) {
+  .infos {
+    padding: 5rem 10rem 10rem;
+  }
+  .infos .title h1 {
+    text-decoration: underline #ef4f0b 0.8rem;
+    margin-top: 60%;
+  }
+  .infos .title p {
+    margin: 10rem 10%;
+  }
+  .infos .title .rainbow {
+    width: 100%;
+    top: 0;
+    max-height: 150rem;
+  }
+  .infos .title .star {
+    height: 25rem;
+  }
+  .infos .instaPost1, .infos .instaPost2 {
+    padding: 5rem;
+    height: 30rem;
+    width: 30rem;
+    margin: 10rem auto;
+  }
+}
+
 @media screen and (max-width: 849px) {
   header nav {
     display: none;

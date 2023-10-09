@@ -1,2 +1,86 @@
 @use "variables.scss";
 
+.infos{
+    h4{
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .title{
+        text-align: center;
+        a{
+            font-weight: bold;
+        }
+        .rainbow{
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    .instaPost1, .instaPost2{
+        article{
+            background-color: variables.$textwhite;
+            color: variables.$darkblue;
+            border-radius: 5rem;
+        }
+    }
+    @media screen and (max-width: 849px) {
+        padding: 5rem 5rem 10rem;
+        position: relative;
+        overflow: hidden;
+        .title{
+            h1{
+                text-decoration: underline variables.$oranj 0.5rem;
+                margin-top: 35rem;
+            }
+            p{
+                margin: 5rem 5% 2rem;
+            }
+            .rainbow{
+                width: 85rem;
+                top: -20rem;
+            }
+            .star{
+                height: 15rem;
+            }
+        }
+        .instaPost1, .instaPost2{
+            article{
+                padding: 3rem;
+                height: 20rem;
+                width: 20rem;
+                margin: 5rem auto;
+            }
+        }
+        .instaPost2{
+            .hash, h4{
+                text-align: end;
+            }
+        }
+    }
+    @media screen and (min-width: 850px) {
+        padding: 5rem 10rem 10rem;
+        .title{
+            h1{
+                text-decoration: underline variables.$oranj 0.8rem;
+                margin-top: 60%;
+            }
+            p{
+                margin: 10rem 10%;
+            }
+            .rainbow{
+                width: 100%; //need to put other next to it for too much growth ?
+                top: 0;
+                max-height: 150rem;
+            }
+            .star{
+                height: 25rem;
+            }
+        }
+        .instaPost1, .instaPost2{
+            padding: 5rem;
+            height: 30rem;
+            width: 30rem;
+            margin: 10rem auto;
+        }
+    }
+}

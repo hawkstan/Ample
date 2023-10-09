@@ -14,6 +14,8 @@ export default function Layout() {
             return "#151730";
         } else if (pathname === "/home") {
             return "#151730";
+        } else if (pathname.startsWith("/models/")) {
+            return "#151730";
         } else {
             return "#d0c4e8";
         }

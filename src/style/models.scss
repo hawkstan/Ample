@@ -1,2 +1,45 @@
 @use "variables.scss";
 
+.models{
+    text-align: center;
+    @media screen and (max-width: 849px){
+        h1{
+            padding-top: 7rem;
+            text-decoration: underline variables.$oranj 0.5rem;
+        }
+        ul{
+            padding: 8rem 0;
+            display: grid;
+            grid-template-columns: 45% 45%;
+            justify-content: center;
+            li{
+                padding: 2rem;
+                img{
+                    height: 20rem;
+                    border: solid variables.$oranj 0.3rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 850px) {
+        h1{
+            padding-top: 10rem;
+            text-decoration: underline variables.$oranj 0.8rem;
+        }
+        ul{
+            padding-top: 10rem;
+            display: grid;
+            grid-template-columns: 45% 45%;
+            justify-content: center;
+            li{
+                padding: 5rem;
+                img{
+                    height: 50rem;
+                    border: solid variables.$oranj 0.3rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

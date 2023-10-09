@@ -1,8 +1,22 @@
 @use "variables.scss";
 
 .project{
+    text-align: center;
+    h3{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    button{
+        background: none;
+        border: none;
+        img{
+            transform: rotate(90deg);
+            transition-duration: 0.6s;
+        }
+    }
     .hash{
         color: variables.$oranj;
+        text-align: end;
         @media screen and (max-width: 849px) {
             font-size: variables.$mobhashsize;
             font-weight: variables.$mobhashweight;
@@ -10,6 +24,174 @@
         @media screen and (min-width: 850px) {
             font-size: variables.$webhashsize;
             font-weight: variables.$webhashweight;
+        }
+    }
+    @media screen and (max-width: 849px) {
+        img{
+            border-radius: 2rem;
+        }
+        .title{
+            text-align: center;
+            img{
+                height: 50rem;
+            }
+            h1{
+                text-decoration: underline variables.$oranj 0.5rem;
+            }
+        }
+        .blurb1{
+            img{
+                height: 35rem;
+            }
+        }
+    }
+    @media screen and (min-width: 850px) {
+        .title{
+            h1{
+                text-decoration: underline variables.$oranj 0.8rem;
+            }
+            img{
+                height: 70rem;
+            }
+        }
+        button{
+            img{
+                height: 10rem;
+            }
+        }
+        .blurb1{
+            .projectPic{
+                height: 50rem;
+            }
+            .fullText{
+                text-align: left;
+            }
+        }
+    }
+}
+//tout ceci est qui apparait ou pas en fonction du bouton cliqué
+.blurb1{
+    .projectPic{
+        display: none;
+    }
+    .fullText{
+        display: none;
+    }
+}
+.blurb1.open{
+    .projectPic{
+        display: block;
+    }
+    .fullText{
+        display: block;
+    }
+    .shortText{
+        display: none;
+    }
+    button{
+        img{
+            transform: rotate(-90deg);
+            transition-duration: 0.6s;
+        }
+    }
+}
+.blurb2{
+    .photoBlurb{
+        display: none;
+    }
+    .fullText{
+        display: none;
+    }
+}
+.blurb2.open{
+    .photoBlurb{
+        display: block;
+    }
+    .fullText{
+        display: block;
+    }
+    .shortText{
+        display: none;
+    }
+    button{
+        img{
+            transform: rotate(-90deg);
+            transition-duration: 0.6s;
+        }
+    }
+}
+.blurb3{
+    .teamPic1, .teamPic2{
+        display: none;
+    }
+    .fullText{
+        display: none;
+    }
+}
+.blurb3.open{
+    .teamPic1, .teamPic2{
+        display: block;
+    }
+    .fullText{
+        display: block;
+    }
+    .shortText{
+        display: none;
+    }
+    button{
+        img{
+            transform: rotate(-90deg);
+            transition-duration: 0.6s;
+        }
+    }
+}
+.blurb4{
+    .thanksPic1, .thanksPic2, .thanksPic3{
+        display: none;
+    }
+    .fullText{
+        display: none;
+    }
+}
+.blurb4.open{
+    .thanksPic1, .thanksPic2, .thanksPic3{
+        display: block;
+    }
+    .fullText{
+        display: block;
+    }
+    .shortText{
+        display: none;
+    }
+    button{
+        img{
+            transform: rotate(-90deg);
+            transition-duration: 0.6s;
+        }
+    }
+}
+.blurb5{
+    .backPic1, .backPic2, .backPic3, .backPic4, .backPic5, .backPic6{
+        display: none;
+    }
+    .fullText{
+        display: none;
+    }
+}
+.blurb5.open{
+    .backPic1, .backPic2, .backPic3, .backPic4, .backPic5, .backPic6{
+        display: block;
+    }
+    .fullText{
+        display: block;
+    }
+    .shortText{
+        display: none;
+    }
+    button{
+        img{
+            transform: rotate(-90deg);
+            transition-duration: 0.6s;
         }
     }
 }

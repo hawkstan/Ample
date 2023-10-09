@@ -317,8 +317,24 @@ header {
   }
 }
 
+.project {
+  text-align: center;
+}
+.project h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.project button {
+  background: none;
+  border: none;
+}
+.project button img {
+  transform: rotate(90deg);
+  transition-duration: 0.6s;
+}
 .project .hash {
   color: #ef4f0b;
+  text-align: end;
 }
 @media screen and (max-width: 849px) {
   .project .hash {
@@ -331,6 +347,145 @@ header {
     font-size: 12rem;
     font-weight: 600;
   }
+}
+@media screen and (max-width: 849px) {
+  .project img {
+    border-radius: 2rem;
+  }
+  .project .title {
+    text-align: center;
+  }
+  .project .title img {
+    height: 50rem;
+  }
+  .project .title h1 {
+    text-decoration: underline #ef4f0b 0.5rem;
+  }
+  .project .blurb1 img {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .project .title h1 {
+    text-decoration: underline #ef4f0b 0.8rem;
+  }
+  .project .title img {
+    height: 70rem;
+  }
+  .project button img {
+    height: 10rem;
+  }
+  .project .blurb1 .projectPic {
+    height: 50rem;
+  }
+  .project .blurb1 .fullText {
+    text-align: left;
+  }
+}
+
+.blurb1 .projectPic {
+  display: none;
+}
+.blurb1 .fullText {
+  display: none;
+}
+
+.blurb1.open .projectPic {
+  display: block;
+}
+.blurb1.open .fullText {
+  display: block;
+}
+.blurb1.open .shortText {
+  display: none;
+}
+.blurb1.open button img {
+  transform: rotate(-90deg);
+  transition-duration: 0.6s;
+}
+
+.blurb2 .photoBlurb {
+  display: none;
+}
+.blurb2 .fullText {
+  display: none;
+}
+
+.blurb2.open .photoBlurb {
+  display: block;
+}
+.blurb2.open .fullText {
+  display: block;
+}
+.blurb2.open .shortText {
+  display: none;
+}
+.blurb2.open button img {
+  transform: rotate(-90deg);
+  transition-duration: 0.6s;
+}
+
+.blurb3 .teamPic1, .blurb3 .teamPic2 {
+  display: none;
+}
+.blurb3 .fullText {
+  display: none;
+}
+
+.blurb3.open .teamPic1, .blurb3.open .teamPic2 {
+  display: block;
+}
+.blurb3.open .fullText {
+  display: block;
+}
+.blurb3.open .shortText {
+  display: none;
+}
+.blurb3.open button img {
+  transform: rotate(-90deg);
+  transition-duration: 0.6s;
+}
+
+.blurb4 .thanksPic1, .blurb4 .thanksPic2, .blurb4 .thanksPic3 {
+  display: none;
+}
+.blurb4 .fullText {
+  display: none;
+}
+
+.blurb4.open .thanksPic1, .blurb4.open .thanksPic2, .blurb4.open .thanksPic3 {
+  display: block;
+}
+.blurb4.open .fullText {
+  display: block;
+}
+.blurb4.open .shortText {
+  display: none;
+}
+.blurb4.open button img {
+  transform: rotate(-90deg);
+  transition-duration: 0.6s;
+}
+
+.blurb5 .backPic1, .blurb5 .backPic2, .blurb5 .backPic3, .blurb5 .backPic4, .blurb5 .backPic5, .blurb5 .backPic6 {
+  display: none;
+}
+.blurb5 .fullText {
+  display: none;
+}
+
+.blurb5.open .backPic1, .blurb5.open .backPic2, .blurb5.open .backPic3, .blurb5.open .backPic4, .blurb5.open .backPic5, .blurb5.open .backPic6 {
+  display: block;
+}
+.blurb5.open .fullText {
+  display: block;
+}
+.blurb5.open .shortText {
+  display: none;
+}
+.blurb5.open button img {
+  transform: rotate(-90deg);
+  transition-duration: 0.6s;
 }
 
 footer {

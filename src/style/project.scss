@@ -15,32 +15,77 @@
         }
     }
     .hash{
-        color: variables.$oranj;
         text-align: end;
-        @media screen and (max-width: 849px) {
-            font-size: variables.$mobhashsize;
-            font-weight: variables.$mobhashweight;
-        }
-        @media screen and (min-width: 850px) {
-            font-size: variables.$webhashsize;
-            font-weight: variables.$webhashweight;
-        }
     }
-    @media screen and (max-width: 849px) {
-        img{
-            border-radius: 2rem;
+    @media screen and (max-width: 399px){
+        button{
+            img{
+                height: 6rem;
+            }
         }
         .title{
-            text-align: center;
+            img{
+                height: 26rem;
+                margin: auto;
+            }
+            h1{
+                text-decoration: underline variables.$oranj 0.4rem;
+            }
+        }
+        .blurb1{
+            .projectPic{
+                height: 25rem;
+            }
+        }
+        .blurb3{
+            .teamPic1, .teamPic2{
+                height: 25rem;
+            }
+        }
+        .blurb4{
+            .thanksPic1, .thanksPic2, .thanksPic3{
+                height: 25rem;
+            }
+        }
+        .blurb5{
+            .backPic1, .backPic2, .backPic3, .backPic4, .backPic5, .backPic6{
+                height: 25rem;
+            }
+        }
+    }
+    @media screen and (min-width: 400px) and (max-width: 849px) {
+        button{
+            img{
+                height: 8rem;
+            }
+        }
+        .title{
             img{
                 height: 50rem;
+                margin: auto;
             }
             h1{
                 text-decoration: underline variables.$oranj 0.5rem;
             }
         }
         .blurb1{
-            img{
+            .projectPic{
+                height: 35rem;
+                border-radius: 2rem;
+            }
+        }
+        .blurb3{
+            .teamPic1, .teamPic2{
+                height: 35rem;
+            }
+        }
+        .blurb4{
+            .thanksPic1, .thanksPic2, .thanksPic3{
+                height: 35rem;
+            }
+        }
+        .blurb5{
+            .backPic1, .backPic2, .backPic3, .backPic4, .backPic5, .backPic6{
                 height: 35rem;
             }
         }
@@ -65,6 +110,21 @@
             }
             .fullText{
                 text-align: left;
+            }
+        }
+        .blurb3{
+            .teamPic1, .teamPic2{
+                height: 50rem;
+            }
+        }
+        .blurb4{
+            .thanksPic1, .thanksPic2, .thanksPic3{
+                height: 50rem;
+            }
+        }
+        .blurb5{
+            .backPic1, .backPic2, .backPic3, .backPic4, .backPic5, .backPic6{
+                height: 50rem;
             }
         }
     }
@@ -96,17 +156,11 @@
     }
 }
 .blurb2{
-    .photoBlurb{
-        display: none;
-    }
     .fullText{
         display: none;
     }
 }
 .blurb2.open{
-    .photoBlurb{
-        display: block;
-    }
     .fullText{
         display: block;
     }

@@ -61,6 +61,21 @@ body h3 {
     font-weight: 500;
   }
 }
+body .hash {
+  color: #ef4f0b;
+}
+@media screen and (max-width: 849px) {
+  body .hash {
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 850px) {
+  body .hash {
+    font-size: 12rem;
+    font-weight: 600;
+  }
+}
 body ul {
   list-style-type: none;
 }
@@ -333,35 +348,54 @@ header {
   transition-duration: 0.6s;
 }
 .project .hash {
-  color: #ef4f0b;
   text-align: end;
 }
-@media screen and (max-width: 849px) {
-  .project .hash {
-    font-size: 4.5rem;
-    font-weight: 600;
+@media screen and (max-width: 399px) {
+  .project button img {
+    height: 6rem;
+  }
+  .project .title img {
+    height: 26rem;
+    margin: auto;
+  }
+  .project .title h1 {
+    text-decoration: underline #ef4f0b 0.4rem;
+  }
+  .project .blurb1 .projectPic {
+    height: 25rem;
+  }
+  .project .blurb3 .teamPic1, .project .blurb3 .teamPic2 {
+    height: 25rem;
+  }
+  .project .blurb4 .thanksPic1, .project .blurb4 .thanksPic2, .project .blurb4 .thanksPic3 {
+    height: 25rem;
+  }
+  .project .blurb5 .backPic1, .project .blurb5 .backPic2, .project .blurb5 .backPic3, .project .blurb5 .backPic4, .project .blurb5 .backPic5, .project .blurb5 .backPic6 {
+    height: 25rem;
   }
 }
-@media screen and (min-width: 850px) {
-  .project .hash {
-    font-size: 12rem;
-    font-weight: 600;
-  }
-}
-@media screen and (max-width: 849px) {
-  .project img {
-    border-radius: 2rem;
-  }
-  .project .title {
-    text-align: center;
+@media screen and (min-width: 400px) and (max-width: 849px) {
+  .project button img {
+    height: 8rem;
   }
   .project .title img {
     height: 50rem;
+    margin: auto;
   }
   .project .title h1 {
     text-decoration: underline #ef4f0b 0.5rem;
   }
-  .project .blurb1 img {
+  .project .blurb1 .projectPic {
+    height: 35rem;
+    border-radius: 2rem;
+  }
+  .project .blurb3 .teamPic1, .project .blurb3 .teamPic2 {
+    height: 35rem;
+  }
+  .project .blurb4 .thanksPic1, .project .blurb4 .thanksPic2, .project .blurb4 .thanksPic3 {
+    height: 35rem;
+  }
+  .project .blurb5 .backPic1, .project .blurb5 .backPic2, .project .blurb5 .backPic3, .project .blurb5 .backPic4, .project .blurb5 .backPic5, .project .blurb5 .backPic6 {
     height: 35rem;
   }
 }
@@ -380,6 +414,15 @@ header {
   }
   .project .blurb1 .fullText {
     text-align: left;
+  }
+  .project .blurb3 .teamPic1, .project .blurb3 .teamPic2 {
+    height: 50rem;
+  }
+  .project .blurb4 .thanksPic1, .project .blurb4 .thanksPic2, .project .blurb4 .thanksPic3 {
+    height: 50rem;
+  }
+  .project .blurb5 .backPic1, .project .blurb5 .backPic2, .project .blurb5 .backPic3, .project .blurb5 .backPic4, .project .blurb5 .backPic5, .project .blurb5 .backPic6 {
+    height: 50rem;
   }
 }
 
@@ -404,16 +447,10 @@ header {
   transition-duration: 0.6s;
 }
 
-.blurb2 .photoBlurb {
-  display: none;
-}
 .blurb2 .fullText {
   display: none;
 }
 
-.blurb2.open .photoBlurb {
-  display: block;
-}
 .blurb2.open .fullText {
   display: block;
 }
@@ -536,6 +573,11 @@ footer .logos ul {
   footer .logos img {
     height: 7rem;
     margin: 1rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  footer .logos img {
+    height: 4.5rem;
   }
 }
 @media screen and (min-width: 850px) {

@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/ample/static/css/main.070168fe.css",
+    "main.js": "/ample/static/js/main.c85c366c.js",
+    "static/js/787.303c5138.chunk.js": "/ample/static/js/787.303c5138.chunk.js",
+    "static/media/IMG_2869.JPG": "/ample/static/media/IMG_2869.512ed47ddb0a83cc17d5.JPG",
+    "static/media/IMG_2656.JPG": "/ample/static/media/IMG_2656.94e931463c275a6d506a.JPG",
+    "static/media/groupe.png": "/ample/static/media/groupe.67a67b8f5f1907769b07.png",
+    "static/media/Loic.png": "/ample/static/media/Loic.59288446469ffbc3eb2f.png",
+    "static/media/Adeline.png": "/ample/static/media/Adeline.2a41119eb5ba95f7f49e.png",
+    "static/media/Cassandra.png": "/ample/static/media/Cassandra.276756e944e1eb2bc293.png",
+    "static/media/Melissa.png": "/ample/static/media/Melissa.bde53b68a1865d075096.png",
+    "static/media/logoAmple.png": "/ample/static/media/logoAmple.5ad013177817c1ec43c9.png",
+    "static/media/Rabi.png": "/ample/static/media/Rabi.b1b5e8dc399e1ffdc772.png",
+    "static/media/Emma.png": "/ample/static/media/Emma.21c85f218d8eabfbcf4d.png",
+    "static/media/LoicFull.jpg": "/ample/static/media/LoicFull.d23534e7ce3fc78be099.jpg",
+    "static/media/CassandraFull.jpg": "/ample/static/media/CassandraFull.c48b8cf81031feeace0c.jpg",
+    "static/media/AdelineFull.jpg": "/ample/static/media/AdelineFull.cb9315e9d36167ce35f2.jpg",
+    "static/media/MelissaFull.jpg": "/ample/static/media/MelissaFull.9cbf6ac32779bba63f13.jpg",
+    "static/media/EmmaFull.jpg": "/ample/static/media/EmmaFull.99dfbc92a4dee7c0b193.jpg",
+    "static/media/RabiFull.jpg": "/ample/static/media/RabiFull.969ac81f29f688f85336.jpg",
+    "static/media/340925348_135638799427130__n.jpg": "/ample/static/media/340925348_135638799427130_3225513012971933356_n.c901eb4921257bee686b.jpg",
+    "static/media/IHECS.png": "/ample/static/media/IHECS.5575870582ef05710479.png",
+    "static/media/button.png": "/ample/static/media/button.7036e089cb830f914194.png",
+    "static/media/weartxl.png": "/ample/static/media/weartxl.903d0a196784fa07536b.png",
+    "static/media/rainbow.svg": "/ample/static/media/rainbow.7ad7dd2f371ed98a3c3bc486a7b87afd.svg",
+    "index.html": "/ample/index.html",
+    "static/media/star2.svg": "/ample/static/media/star2.16fb6c84fe07b1d64a166e5bdcb2f801.svg",
+    "main.070168fe.css.map": "/ample/static/css/main.070168fe.css.map",
+    "main.c85c366c.js.map": "/ample/static/js/main.c85c366c.js.map",
+    "787.303c5138.chunk.js.map": "/ample/static/js/787.303c5138.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.070168fe.css",
+    "static/js/main.c85c366c.js"
+  ]
+}

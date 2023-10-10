@@ -9,7 +9,6 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 export default function Footer({ style }) {
     return(
         <footer style={style}>
-            <div className="wave"></div>
             <section className="contact">
                 <img src={logoAmple} alt="une personne grosse d'apparence féminine assise sur le mot Ample" className="logoAmple" />
                 <address>

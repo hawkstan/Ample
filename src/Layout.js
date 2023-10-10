@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./routes/Header";
 import Footer from "./routes/Footer"
+import Wave from "./routes/Wave";
 
 export default function Layout() {
     //ce fichier sert à dire à la page comment se construire :
@@ -22,7 +23,6 @@ export default function Layout() {
     };
     //si d'autres pages auraient besoin d'une couleur diff aussi,
     //il suffit de les rajouter ici
-    //exactement comme plus haut mais avec else if plutôt que juste else
     //juste le else ce n'est que pour la dernière option,
     //celle qui doit être la normale par défaut sans circonstances spéciales
     const footerColor = {
@@ -33,6 +33,7 @@ export default function Layout() {
         <>
             <Header />
             <Outlet />
+            {/* <Wave style={footerColor} /> */}
             <Footer style={footerColor} />
         </>
     )

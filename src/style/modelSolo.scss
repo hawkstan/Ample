@@ -1,9 +1,24 @@
 @use "variables.scss";
 
 .modelSolo{
+    img{
+        height: 20rem;
+    }
     text-align: center;
-    h3{
-        text-transform: uppercase;
+    .title{
+        h3{
+            text-transform: uppercase;
+            text-align: start;
+            background-color: variables.$oranj;
+            width: fit-content;
+            border-radius: 5rem;
+        }
+    }
+    .pics{
+        position: relative;
+        img{
+            position: absolute;
+        }
     }
     .vids{
         background-color: variables.$lavender;
@@ -12,15 +27,40 @@
             grid-template-columns: 45% 45%;
             justify-content: center;
             li{
-                video{
-                    height: 40rem;
-                    background-color: variables.$textwhite;
-                }
+                background-color: variables.$textwhite;
             }
         }
     }
     @media screen and (max-width: 849px){
-        
+        .title{
+            h3{
+                margin: -1rem 2rem 0;
+                font-weight: variables.$mobtitleweight;
+                padding: 0.2rem 2rem;
+                position: relative;
+            }
+            .cropContainer{
+                overflow: hidden;
+                height: 20rem;
+                img{
+                    height: 200rem;
+                    margin-top: -90rem;
+                    margin-left: -30rem;
+                }
+            }
+        }
+        .pics{
+            height: 120rem;
+            .img1{
+                top: 3rem;
+                left: 1rem;
+                height: 30rem;
+            }
+            .img2{
+                top: 15rem;
+                right: 3rem;
+            }
+        }
     }
     @media screen and (min-width: 850px) {
         

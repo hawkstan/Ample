@@ -385,8 +385,21 @@ header {
 .modelSolo {
   text-align: center;
 }
-.modelSolo h3 {
+.modelSolo img {
+  height: 20rem;
+}
+.modelSolo .title h3 {
   text-transform: uppercase;
+  text-align: start;
+  background-color: #ef4f0b;
+  width: fit-content;
+  border-radius: 5rem;
+}
+.modelSolo .pics {
+  position: relative;
+}
+.modelSolo .pics img {
+  position: absolute;
 }
 .modelSolo .vids {
   background-color: #d0c4e8;
@@ -396,9 +409,37 @@ header {
   grid-template-columns: 45% 45%;
   justify-content: center;
 }
-.modelSolo .vids ul li video {
-  height: 40rem;
+.modelSolo .vids ul li {
   background-color: #f2f2f2;
+}
+@media screen and (max-width: 849px) {
+  .modelSolo .title h3 {
+    margin: -1rem 2rem 0;
+    font-weight: 700;
+    padding: 0.2rem 2rem;
+    position: relative;
+  }
+  .modelSolo .title .cropContainer {
+    overflow: hidden;
+    height: 20rem;
+  }
+  .modelSolo .title .cropContainer img {
+    height: 200rem;
+    margin-top: -90rem;
+    margin-left: -30rem;
+  }
+  .modelSolo .pics {
+    height: 120rem;
+  }
+  .modelSolo .pics .img1 {
+    top: 3rem;
+    left: 1rem;
+    height: 30rem;
+  }
+  .modelSolo .pics .img2 {
+    top: 15rem;
+    right: 3rem;
+  }
 }
 @media screen and (max-width: 849px) {
   header nav {

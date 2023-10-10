@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer"
+import Header from "./routes/Header";
+import Footer from "./routes/Footer"
 
 export default function Layout() {
     //ce fichier sert à dire à la page comment se construire :

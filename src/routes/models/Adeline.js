@@ -1,4 +1,5 @@
 import imgTest from "../../img/IMG_2656.JPG";
+import modelDrawing from "../../img/Adeline.png";
 
 export default function Adeline(){
     return (
@@ -6,7 +7,7 @@ export default function Adeline(){
             <section className="title">
                 <h1>nos modèles</h1>
                 <div className="cropContainer">
-                    <img src={imgTest} className="imgBanner"/>
+                    <img src={imgTest}/>
                 </div>
                 <h3>Adeline</h3>
             </section>
@@ -23,7 +24,10 @@ export default function Adeline(){
             </section>
             <section className="vids">
                 <h1>nos capsules</h1>
-                <img />
+                <div className="modelQuote">
+                    <img src={modelDrawing} className="modelDrawing"/>
+                    <p>wesha c'est moi Adeline je kiffe trop ce projet</p>
+                </div>
                 <ul>
                     <li>
                         <iframe 

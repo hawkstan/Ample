@@ -1,6 +1,7 @@
 @use "variables.scss";
 
 .modelSolo{
+    overflow: hidden;
     img{
         height: 20rem;
     }
@@ -32,7 +33,13 @@
         }
     }
     @media screen and (max-width: 849px){
+        h1{
+            text-decoration: underline variables.$oranj 0.6rem;
+        }
         .title{
+            h1{
+                margin: 4rem 0 3rem;
+            }
             h3{
                 margin: -1rem 2rem 0;
                 font-weight: variables.$mobtitleweight;
@@ -50,15 +57,75 @@
             }
         }
         .pics{
-            height: 120rem;
+            height: 150rem;
             .img1{
                 top: 3rem;
                 left: 1rem;
                 height: 30rem;
             }
             .img2{
-                top: 15rem;
+                top: 20rem;
                 right: 3rem;
+                height: 20rem;
+            }
+            .img3{
+                top: 35rem;
+                left: 7rem;
+            }
+            .img4{
+                top: 45rem;
+                right: 2rem;
+                height: 25rem;
+            }
+            .img5{
+                top: 60rem;
+                left: 1.5rem;
+                height: 26rem;
+            }
+            .img6{
+                bottom: 56rem;
+                right: 2rem;
+            }
+            .img7{
+                bottom: 35rem;
+                left: 2rem;
+                height: 25rem;
+            }
+            .img8{
+                bottom: 15rem;
+                right: 4rem;
+            }
+            .img9{
+                bottom: 2rem;
+                left: 2rem;
+            }
+        }
+        .vids{
+            padding: 4rem 0;
+            .modelQuote{
+                position: relative;
+                height: 50rem;
+                .modelDrawing{
+                    position: absolute;
+                    height: 40rem;
+                    bottom: 5rem;
+                    left: 7rem;
+                }
+                p{
+                    color: variables.$darkblue;
+                    position: absolute;
+                    top: 15rem;
+                    left: 18rem;
+                    width: 20rem;
+                }
+            }
+            li{
+                border: solid red 0.2rem;
+                width: fit-content;
+                iframe, video{
+                    height: 35rem;
+                    width: 20rem;
+                }
             }
         }
     }

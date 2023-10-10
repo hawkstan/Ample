@@ -383,6 +383,7 @@ header {
 }
 
 .modelSolo {
+  overflow: hidden;
   text-align: center;
 }
 .modelSolo img {
@@ -413,6 +414,12 @@ header {
   background-color: #f2f2f2;
 }
 @media screen and (max-width: 849px) {
+  .modelSolo h1 {
+    text-decoration: underline #ef4f0b 0.6rem;
+  }
+  .modelSolo .title h1 {
+    margin: 4rem 0 3rem;
+  }
   .modelSolo .title h3 {
     margin: -1rem 2rem 0;
     font-weight: 700;
@@ -429,7 +436,7 @@ header {
     margin-left: -30rem;
   }
   .modelSolo .pics {
-    height: 120rem;
+    height: 150rem;
   }
   .modelSolo .pics .img1 {
     top: 3rem;
@@ -437,8 +444,68 @@ header {
     height: 30rem;
   }
   .modelSolo .pics .img2 {
-    top: 15rem;
+    top: 20rem;
     right: 3rem;
+    height: 20rem;
+  }
+  .modelSolo .pics .img3 {
+    top: 35rem;
+    left: 7rem;
+  }
+  .modelSolo .pics .img4 {
+    top: 45rem;
+    right: 2rem;
+    height: 25rem;
+  }
+  .modelSolo .pics .img5 {
+    top: 60rem;
+    left: 1.5rem;
+    height: 26rem;
+  }
+  .modelSolo .pics .img6 {
+    bottom: 56rem;
+    right: 2rem;
+  }
+  .modelSolo .pics .img7 {
+    bottom: 35rem;
+    left: 2rem;
+    height: 25rem;
+  }
+  .modelSolo .pics .img8 {
+    bottom: 15rem;
+    right: 4rem;
+  }
+  .modelSolo .pics .img9 {
+    bottom: 2rem;
+    left: 2rem;
+  }
+  .modelSolo .vids {
+    padding: 4rem 0;
+  }
+  .modelSolo .vids .modelQuote {
+    position: relative;
+    height: 50rem;
+  }
+  .modelSolo .vids .modelQuote .modelDrawing {
+    position: absolute;
+    height: 40rem;
+    bottom: 5rem;
+    left: 7rem;
+  }
+  .modelSolo .vids .modelQuote p {
+    color: #151730;
+    position: absolute;
+    top: 15rem;
+    left: 18rem;
+    width: 20rem;
+  }
+  .modelSolo .vids li {
+    border: solid red 0.2rem;
+    width: fit-content;
+  }
+  .modelSolo .vids li iframe, .modelSolo .vids li video {
+    height: 35rem;
+    width: 20rem;
   }
 }
 @media screen and (max-width: 849px) {

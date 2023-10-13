@@ -19,7 +19,7 @@ export default function Home(){
                     Au travers du projet Ample, on souhaite non seulement donner la parole et de la visibilité aux personnes grosses, mettre en lumière la grossophobie de l'espace public, montrer la beauté des corps gros, mais aussi sensibiliser les personnes non concernées à leurs propres comportements et biais grossophobes.
                     <br/><br/>
                 </p>
-                <div className="button"><Link to="/infos">+ d'infos</Link></div>
+                <div className="button"><Link to="/project">+ d'infos</Link></div>
             </section>
             <section className="modelsBlurb">
                 <h1>Nos intervenant.es</h1>

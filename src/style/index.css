@@ -87,7 +87,7 @@ header {
 @media screen and (max-width: 849px) {
   header {
     font-size: 1.5rem;
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
   header nav .active {
     text-decoration: underline #ef4f0b 0.2rem;
@@ -515,20 +515,20 @@ header {
   header .burgerToggle {
     background: none;
     border: none;
-    padding: 2rem;
+    padding: 3rem;
     cursor: pointer;
   }
   header .burgerToggle .barTop, header .burgerToggle .barMid {
     background-color: #f2f2f2;
-    height: 0.5rem;
-    width: 3.5rem;
+    height: 0.8rem;
+    width: 5rem;
     margin: 0.5rem auto;
     border-radius: 5rem;
   }
   header .burgerToggle .barBot {
     background-color: #f2f2f2;
-    height: 0.5rem;
-    width: 2rem;
+    height: 0.8rem;
+    width: 3rem;
     margin-left: 40%;
     border-radius: 5rem;
   }
@@ -538,17 +538,17 @@ header {
   }
   header .burgerMenu.open .burgerToggle {
     position: relative;
-    left: 10rem;
+    left: 7rem;
   }
   header .burgerMenu.open .burgerToggle .barTop {
-    height: 0.8rem;
+    height: 0.9rem;
     background-color: #151730;
     transform: rotate(-45deg);
     transition-duration: 0.4s;
     translate: 0 0.65rem;
   }
   header .burgerMenu.open .burgerToggle .barMid {
-    height: 0.8rem;
+    height: 0.9rem;
     background-color: #151730;
     transform: rotate(45deg);
     transition-duration: 0.4s;

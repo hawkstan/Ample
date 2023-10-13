@@ -8,19 +8,19 @@ header{
         .burgerToggle {
             background: none;
             border: none;
-            padding: 2rem;
+            padding: 3rem;
             cursor: pointer;
             .barTop, .barMid {
                 background-color: variables.$textwhite;
-                height: 0.5rem;
-                width: 3.5rem;
+                height: 0.8rem;
+                width: 5rem;
                 margin: 0.5rem auto;
                 border-radius: 5rem;
             }
             .barBot{
                 background-color: variables.$textwhite;
-                height: 0.5rem;
-                width: 2rem;
+                height: 0.8rem;
+                width: 3rem;
                 margin-left: 40%;
                 border-radius: 5rem;
             }
@@ -30,16 +30,16 @@ header{
             background-color: variables.$textwhite;
             .burgerToggle{
                 position: relative;
-                left: 10rem;
+                left: 7rem;
                 .barTop{
-                    height: 0.8rem;
+                    height: 0.9rem;
                     background-color: variables.$darkblue;
                     transform: rotate(-45deg);
                     transition-duration: 0.4s;
                     translate: 0 0.65rem;
                 }
                 .barMid{
-                    height: 0.8rem;
+                    height: 0.9rem;
                     background-color: variables.$darkblue;
                     transform: rotate(45deg);
                     transition-duration: 0.4s;

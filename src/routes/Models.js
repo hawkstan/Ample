@@ -10,7 +10,6 @@ export default function Models(){
     return (
         <main className="models">
             <h1>Nos modèles</h1>
-            <p>texte pour décrire un peu les gens</p>
             <ul>
                 <li>
                     <Link to="/models/Rabi">

@@ -26,17 +26,17 @@ export default function Adeline(){
                 <h1>nos capsules</h1>
                 <div className="modelQuote">
                     <img src={modelDrawing} className="modelDrawing"/>
-                    <p>wesha c'est moi Adeline je kiffe trop ce projet</p>
+                    <i>« Le projet Aple m'a vraiment permise de me sentir belle même si c'était un exercice difficile. »</i>
                 </div>
                 <ul>
                     <li>
                         <iframe 
+                            src="https://www.youtube.com/watch?v=9EbeUl9xijA"
                             title="youtube video"
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
                         />
                     </li>
-                    <li><video /></li>
                 </ul>
             </section>
         </main>

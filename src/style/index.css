@@ -302,10 +302,14 @@ header {
     height: 15rem;
   }
   .infos .instaPost1 article, .infos .instaPost2 article {
-    padding: 3rem;
-    height: 20rem;
-    width: 20rem;
+    height: 28rem;
+    width: 28rem;
     margin: 5rem auto;
+  }
+  .infos .instaPost1 article :first-child, .infos .instaPost2 article :first-child {
+    height: 26rem;
+    width: 26rem;
+    padding: 1.5rem;
   }
   .infos .instaPost2 .hash, .infos .instaPost2 h4 {
     text-align: end;
@@ -330,11 +334,13 @@ header {
   .infos .title .star {
     height: 25rem;
   }
-  .infos .instaPost1, .infos .instaPost2 {
-    padding: 5rem;
-    height: 30rem;
-    width: 30rem;
+  .infos .instaPost1 article, .infos .instaPost2 article {
+    height: 48rem;
+    width: 52rem;
     margin: 10rem auto;
+  }
+  .infos .instaPost1 article :first-child, .infos .instaPost2 article :first-child {
+    padding: 6rem 2rem;
   }
 }
 
@@ -386,9 +392,6 @@ header {
   overflow: hidden;
   text-align: center;
 }
-.modelSolo img {
-  height: 20rem;
-}
 .modelSolo .title h3 {
   text-transform: uppercase;
   text-align: start;
@@ -405,13 +408,16 @@ header {
 .modelSolo .vids {
   background-color: #d0c4e8;
 }
+.modelSolo .vids i {
+  color: #151730;
+}
 .modelSolo .vids ul {
   display: grid;
-  grid-template-columns: 45% 45%;
   justify-content: center;
 }
 .modelSolo .vids ul li {
   background-color: #f2f2f2;
+  border: solid #151730 0.1rem;
 }
 @media screen and (max-width: 849px) {
   .modelSolo h1 {
@@ -436,78 +442,180 @@ header {
     margin-left: -30rem;
   }
   .modelSolo .pics {
-    height: 150rem;
+    height: 140rem;
   }
   .modelSolo .pics .img1 {
     top: 3rem;
     left: 1rem;
-    height: 30rem;
+    height: 24rem;
   }
   .modelSolo .pics .img2 {
-    top: 20rem;
-    right: 3rem;
-    height: 20rem;
+    top: 18rem;
+    right: 2rem;
+    height: 21rem;
   }
   .modelSolo .pics .img3 {
-    top: 35rem;
-    left: 7rem;
+    top: 32rem;
+    left: 3rem;
+    height: 20rem;
   }
   .modelSolo .pics .img4 {
     top: 45rem;
-    right: 2rem;
-    height: 25rem;
+    right: 1rem;
+    height: 24rem;
   }
   .modelSolo .pics .img5 {
     top: 60rem;
-    left: 1.5rem;
-    height: 26rem;
+    left: 1rem;
+    height: 23rem;
   }
   .modelSolo .pics .img6 {
-    bottom: 56rem;
-    right: 2rem;
+    bottom: 48rem;
+    right: 1.5rem;
+    height: 20rem;
   }
   .modelSolo .pics .img7 {
-    bottom: 35rem;
-    left: 2rem;
+    bottom: 28rem;
+    left: 1rem;
     height: 25rem;
   }
   .modelSolo .pics .img8 {
-    bottom: 15rem;
-    right: 4rem;
+    bottom: 20rem;
+    right: 1rem;
+    height: 21rem;
   }
   .modelSolo .pics .img9 {
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 5rem;
+    left: 3rem;
+    height: 19rem;
   }
   .modelSolo .vids {
     padding: 4rem 0;
   }
   .modelSolo .vids .modelQuote {
     position: relative;
-    height: 50rem;
+    height: 40rem;
   }
   .modelSolo .vids .modelQuote .modelDrawing {
     position: absolute;
     height: 40rem;
-    bottom: 5rem;
-    left: 7rem;
+    bottom: 0;
+    left: 2rem;
   }
-  .modelSolo .vids .modelQuote p {
+  .modelSolo .vids .modelQuote i {
+    width: 16rem;
     color: #151730;
     position: absolute;
-    top: 15rem;
-    left: 18rem;
-    width: 20rem;
+    top: 8rem;
+    left: 17rem;
   }
   .modelSolo .vids li {
-    border: solid red 0.2rem;
-    width: fit-content;
+    padding: 2rem;
   }
   .modelSolo .vids li iframe, .modelSolo .vids li video {
-    height: 35rem;
-    width: 20rem;
+    height: 40rem;
+    width: 24rem;
   }
 }
+@media screen and (min-width: 850px) {
+  .modelSolo h1 {
+    text-decoration: underline #ef4f0b 0.8rem;
+  }
+  .modelSolo .title h1 {
+    margin: 6rem 0 4rem;
+  }
+  .modelSolo .title h3 {
+    margin: -3rem 5rem 0;
+    font-weight: 700;
+    padding: 0.2rem 2rem;
+    position: relative;
+  }
+  .modelSolo .title .cropContainer {
+    overflow: hidden;
+    height: 25rem;
+  }
+  .modelSolo .title .cropContainer img {
+    height: 280rem;
+    margin-top: -130rem;
+    margin-left: -30rem;
+  }
+  .modelSolo .pics {
+    height: 130rem;
+  }
+  .modelSolo .pics .img1 {
+    top: 6rem;
+    left: 5rem;
+    height: 34rem;
+  }
+  .modelSolo .pics .img2 {
+    top: 4rem;
+    right: 9rem;
+    height: 41rem;
+  }
+  .modelSolo .pics .img3 {
+    top: 12rem;
+    left: 42rem;
+    height: 60rem;
+  }
+  .modelSolo .pics .img4 {
+    top: 50rem;
+    right: 15rem;
+    height: 34rem;
+  }
+  .modelSolo .pics .img5 {
+    top: 50rem;
+    left: 8rem;
+    height: 35rem;
+  }
+  .modelSolo .pics .img6 {
+    bottom: 20rem;
+    right: 45rem;
+    height: 32rem;
+  }
+  .modelSolo .pics .img7 {
+    bottom: 12rem;
+    left: 37rem;
+    height: 35rem;
+  }
+  .modelSolo .pics .img8 {
+    bottom: 4rem;
+    right: 5rem;
+    height: 40rem;
+  }
+  .modelSolo .pics .img9 {
+    bottom: 5rem;
+    left: 4rem;
+    height: 31rem;
+  }
+  .modelSolo .vids {
+    padding: 4rem 0;
+  }
+  .modelSolo .vids .modelQuote {
+    position: relative;
+    height: 60rem;
+  }
+  .modelSolo .vids .modelQuote .modelDrawing {
+    position: absolute;
+    height: 60rem;
+    bottom: 0;
+    left: 20%;
+  }
+  .modelSolo .vids .modelQuote i {
+    width: 35rem;
+    color: #151730;
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+  }
+  .modelSolo .vids li {
+    padding: 3.5rem;
+  }
+  .modelSolo .vids li iframe, .modelSolo .vids li video {
+    height: 55rem;
+    width: 35rem;
+  }
+}
+
 @media screen and (max-width: 849px) {
   header nav {
     display: none;
@@ -582,6 +690,24 @@ header {
 .project {
   text-align: center;
 }
+.project .blurb1, .project .blurb2, .project .blurb3, .project .blurb4, .project .blurb5 {
+  padding: 2rem;
+}
+.project .blurb1 .fullText, .project .blurb2 .fullText, .project .blurb3 .fullText, .project .blurb4 .fullText, .project .blurb5 .fullText {
+  padding: 1rem;
+  display: none;
+  text-align: start;
+}
+.project .blurb1.open .fullText, .project .blurb2.open .fullText, .project .blurb3.open .fullText, .project .blurb4.open .fullText, .project .blurb5.open .fullText {
+  display: block;
+}
+.project .blurb1.open .shortText, .project .blurb2.open .shortText, .project .blurb3.open .shortText, .project .blurb4.open .shortText, .project .blurb5.open .shortText {
+  display: none;
+}
+.project .blurb1.open button img, .project .blurb2.open button img, .project .blurb3.open button img, .project .blurb4.open button img, .project .blurb5.open button img {
+  transform: rotate(-90deg);
+  transition-duration: 0.6s;
+}
 .project h3 {
   text-transform: uppercase;
   text-align: center;
@@ -611,11 +737,23 @@ header {
   .project .blurb1 .projectPic {
     height: 25rem;
   }
+  .project .blurb2 p {
+    text-align: center;
+  }
+  .project .blurb2 p ul {
+    text-align: start;
+    list-style-type: disc;
+  }
   .project .blurb3 .teamPic1, .project .blurb3 .teamPic2 {
     height: 25rem;
   }
   .project .blurb4 .thanksPic1, .project .blurb4 .thanksPic2, .project .blurb4 .thanksPic3 {
     height: 25rem;
+  }
+  .project .blurb4 h6 {
+    color: #ef4f0b;
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
   .project .blurb5 .backPic1, .project .blurb5 .backPic2, .project .blurb5 .backPic3, .project .blurb5 .backPic4, .project .blurb5 .backPic5, .project .blurb5 .backPic6 {
     height: 25rem;
@@ -636,11 +774,23 @@ header {
     height: 35rem;
     border-radius: 2rem;
   }
+  .project .blurb2 .fullText {
+    text-align: center;
+  }
+  .project .blurb2 .fullText ul {
+    text-align: start;
+    list-style-type: disc;
+  }
   .project .blurb3 .teamPic1, .project .blurb3 .teamPic2 {
     height: 35rem;
   }
   .project .blurb4 .thanksPic1, .project .blurb4 .thanksPic2, .project .blurb4 .thanksPic3 {
     height: 35rem;
+  }
+  .project .blurb4 h6 {
+    color: #ef4f0b;
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
   .project .blurb5 .backPic1, .project .blurb5 .backPic2, .project .blurb5 .backPic3, .project .blurb5 .backPic4, .project .blurb5 .backPic5, .project .blurb5 .backPic6 {
     height: 35rem;
@@ -673,109 +823,10 @@ header {
   }
 }
 
-.blurb1 .projectPic {
-  display: none;
-}
-.blurb1 .fullText {
-  display: none;
-}
-
-.blurb1.open .projectPic {
-  display: block;
-}
-.blurb1.open .fullText {
-  display: block;
-}
-.blurb1.open .shortText {
-  display: none;
-}
-.blurb1.open button img {
-  transform: rotate(-90deg);
-  transition-duration: 0.6s;
-}
-
-.blurb2 .fullText {
-  display: none;
-}
-
-.blurb2.open .fullText {
-  display: block;
-}
-.blurb2.open .shortText {
-  display: none;
-}
-.blurb2.open button img {
-  transform: rotate(-90deg);
-  transition-duration: 0.6s;
-}
-
-.blurb3 .teamPic1, .blurb3 .teamPic2 {
-  display: none;
-}
-.blurb3 .fullText {
-  display: none;
-}
-
-.blurb3.open .teamPic1, .blurb3.open .teamPic2 {
-  display: block;
-}
-.blurb3.open .fullText {
-  display: block;
-}
-.blurb3.open .shortText {
-  display: none;
-}
-.blurb3.open button img {
-  transform: rotate(-90deg);
-  transition-duration: 0.6s;
-}
-
-.blurb4 .thanksPic1, .blurb4 .thanksPic2, .blurb4 .thanksPic3 {
-  display: none;
-}
-.blurb4 .fullText {
-  display: none;
-}
-
-.blurb4.open .thanksPic1, .blurb4.open .thanksPic2, .blurb4.open .thanksPic3 {
-  display: block;
-}
-.blurb4.open .fullText {
-  display: block;
-}
-.blurb4.open .shortText {
-  display: none;
-}
-.blurb4.open button img {
-  transform: rotate(-90deg);
-  transition-duration: 0.6s;
-}
-
-.blurb5 .backPic1, .blurb5 .backPic2, .blurb5 .backPic3, .blurb5 .backPic4, .blurb5 .backPic5, .blurb5 .backPic6 {
-  display: none;
-}
-.blurb5 .fullText {
-  display: none;
-}
-
-.blurb5.open .backPic1, .blurb5.open .backPic2, .blurb5.open .backPic3, .blurb5.open .backPic4, .blurb5.open .backPic5, .blurb5.open .backPic6 {
-  display: block;
-}
-.blurb5.open .fullText {
-  display: block;
-}
-.blurb5.open .shortText {
-  display: none;
-}
-.blurb5.open button img {
-  transform: rotate(-90deg);
-  transition-duration: 0.6s;
-}
-
 footer {
   overflow: hidden;
   position: relative;
-  padding: 10rem 4rem 4rem;
+  padding: 6rem 4rem 2rem;
 }
 footer address {
   font-style: normal;

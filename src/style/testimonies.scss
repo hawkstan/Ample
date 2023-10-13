@@ -1,2 +1,99 @@
 @use "variables.scss";
 
+.testimonies{
+    text-align: center;
+    .title{
+        a{
+            font-weight: bold;
+        }
+        .rainbow{
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    button{
+        background: none;
+        border: none;
+        color: variables.$lilblue;
+    }
+    .testi1, .testi2, .testi3{
+        padding: 2rem;
+        .hash, h3{
+            text-align: start;
+        }
+        .fullText{
+            margin: 4rem auto;
+            padding: 3rem;
+            display: none;
+            color: variables.$darkblue;
+            span{
+                color: variables.$oranj;
+            }
+            background-color: variables.$textwhite;
+            border-radius: 2rem;
+            max-width: 80rem;
+        }
+        .shortText{
+            margin: 2rem 0;
+        }
+    }
+    .testi1.open, .testi2.open, .testi3.open{
+        .fullText{
+            display: block;
+        }
+        .shortText{
+            display: none;
+        }
+        button{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 849px) {
+        padding: 5rem 5rem 10rem;
+        position: relative;
+        overflow: hidden;
+        button{
+            font-weight: variables.$mobtitleweight;
+        }
+        .title{
+            h1{
+                text-decoration: underline variables.$oranj 0.5rem;
+                margin-top: 35rem;
+            }
+            p{
+                margin: 5rem 5% 2rem;
+            }
+            .rainbow{
+                width: 85rem;
+                top: -20rem;
+            }
+            .star{
+                height: 15rem;
+            }
+        }
+    }
+    @media screen and (min-width: 850px) {
+        padding: 5rem 10rem 10rem;
+        button{
+            font-weight: variables.$webtitleweight;
+        }
+        .title{
+            h1{
+                text-decoration: underline variables.$oranj 0.8rem;
+                margin-top: 60%;
+            }
+            p{
+                margin: 10rem 10%;
+            }
+            .rainbow{
+                width: 100%; //need to put other next to it for too much growth ?
+                top: 0;
+                max-height: 150rem;
+            }
+            .star{
+                height: 25rem;
+            }
+        }
+    }
+}

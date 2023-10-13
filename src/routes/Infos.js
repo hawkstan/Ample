@@ -1,3 +1,4 @@
+import { InstagramEmbed } from 'react-social-media-embed';
 import rainbow from "../img/rainbow.svg"; //see if possible to have png instead
 import star from "../img/star2.svg";
 
@@ -16,14 +17,14 @@ export default function Infos(){
                 <p className="hash">#01</p>
                 <h4>La grossophobie</h4>
                 <article>
-                    <p>lien vers post insta ?</p>
+                    <InstagramEmbed url="https://www.instagram.com/p/Cr3nFW9t5vU/?hl=fr&img_index=1" />
                 </article>
             </section>
             <section className="instaPost2">
                 <p className="hash">#02</p>
                 <h4>La charge mentale</h4>
                 <article>
-                    <p>lien vers post insta ?</p>
+                    <InstagramEmbed url="https://www.instagram.com/p/Ct04F8_LiIY/?hl=fr&img_index=1/embed/" />
                 </article>
             </section>
         </main>

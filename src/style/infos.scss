@@ -45,10 +45,14 @@
         }
         .instaPost1, .instaPost2{
             article{
-                padding: 3rem;
-                height: 20rem;
-                width: 20rem;
+                height: 28rem;
+                width: 28rem;
                 margin: 5rem auto;
+                :first-child{
+                    height: 26rem;
+                    width: 26rem;
+                    padding: 1.5rem;
+                }
             }
         }
         .instaPost2{
@@ -77,10 +81,14 @@
             }
         }
         .instaPost1, .instaPost2{
-            padding: 5rem;
-            height: 30rem;
-            width: 30rem;
-            margin: 10rem auto;
+            article{
+                height: 48rem;
+                width: 52rem;
+                margin: 10rem auto;
+                :first-child{
+                    padding: 6rem 2rem;
+                }
+            }
         }
     }
 }
